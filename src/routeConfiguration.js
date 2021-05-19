@@ -7,6 +7,7 @@ import { NotFoundPage } from './containers';
 // Otherwise, components will import form container eventually and
 // at that point css bundling / imports will happen in wrong order.
 import { NamedRedirect } from './components';
+import ManageListingsPage from './containers/ManageListingsPage/ManageListingsPage';
 
 const pageDataLoadingAPI = getPageDataLoadingAPI();
 
@@ -83,6 +84,18 @@ const routeConfiguration = () => {
       name: 'ListingPage',
       component: ListingPage,
       loadData: pageDataLoadingAPI.ListingPage.loadData,
+    },
+    {
+      path: '/l/:slug/:id',
+      name: 'ListingPage',
+      component: ListingPage,
+      loadData: pageDataLoadingAPI.ListingPage.loadData,
+    },
+    {
+      path: '/l/managebooking',
+      name: 'MangageListingsPage',
+      component: ManageListingsPage,
+      loadData: pageDataLoadingAPI.ManageListingsPage.loadData,
     },
     {
       path: '/l/:slug/:id/checkout',

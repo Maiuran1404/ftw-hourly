@@ -94,8 +94,8 @@ const TopbarDesktop = props => {
               {currentUserListing ? (
                 <FormattedMessage id="TopbarDesktop.editYourListingLink" />
               ) : (
-                <FormattedMessage id="TopbarDesktop.addYourListingLink" />
-              )}
+                  <FormattedMessage id="TopbarDesktop.addYourListingLink" />
+                )}
             </div>
           </OwnListingLink>
         </MenuItem>
@@ -143,21 +143,37 @@ const TopbarDesktop = props => {
     </NamedLink>
   );
 
+  const manageBookingsLink = isAuthenticatedOrJustHydrated ? null : (
+    <NamedLink name="ManageListingsPage" className={css.OwnListingLink}>
+      <span className={css.ownListing}>
+        <FormattedMessage id="TopbarDesktop.manageBooking" />
+      </span>
+    </NamedLink>
+  );
+
+
   const listingLink =
     authenticatedOnClientSide && currentUserListingFetched && currentUserListing ? (
-      <ListingLink
-        className={css.createListingLink}
-        listing={currentUserListing}
-        children={
-          <span className={css.createListing}>
-            <FormattedMessage id="TopbarDesktop.viewListing" />
-          </span>
-        }
-      />
+      // <ListingLink
+      //   className={css.createListingLink}
+      //   listing={currentUserListing}
+      //   children={
+      //     <span className={css.createListing}>
+      //       <FormattedMessage id="TopbarDesktop.viewListing" />
+      //     </span>
+      //   }
+      // />
+
+      <NamedLink className={css.createListingLink} name="MangageListingsPage">
+        <span className={css.createListing}>
+          <FormattedMessage id="TopbarDesktop.createListing" />
+        </span>
+      </NamedLink>
+
     ) : null;
 
   const createListingLink =
-    isAuthenticatedOrJustHydrated && !(currentUserListingFetched && !currentUserListing) ? null : (
+    isAuthenticatedOrJustHydrated ? null : (
       <NamedLink className={css.createListingLink} name="NewListingPage">
         <span className={css.createListing}>
           <FormattedMessage id="TopbarDesktop.createListing" />
