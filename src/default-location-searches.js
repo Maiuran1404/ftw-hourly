@@ -11,11 +11,7 @@ const defaultLocations = [
   {
     id: 'default-amsterdam',
     predictionPlace: {
-      address: 'Amsterdam, Noord Holland, Netherlands',
-      bounds: new LatLngBounds(
-        new LatLng(52.377956, 4.897070),
-        new LatLng(53.377956, 5.897070)
-      ),
+      address: 'Amsterdam, North Holland, Netherlands',
     },
   },
   {
