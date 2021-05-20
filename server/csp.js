@@ -54,6 +54,7 @@ const defaultDirectives = {
     '*.ggpht.com',
 
     // Google Analytics
+    'www.googletagmanager.com',
     'www.google.com',
     'www.google-analytics.com',
     'stats.g.doubleclick.net',
@@ -65,6 +66,7 @@ const defaultDirectives = {
     unsafeInline,
     unsafeEval,
     data,
+    'https://www.googletagmanager.com',
     'maps.googleapis.com',
     'api.mapbox.com',
     '*.google-analytics.com',
