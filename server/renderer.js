@@ -90,7 +90,7 @@ const replacer = (key = null, value) => {
   return types.replacer(key, cleanedValue);
 };
 
-exports.render = function(requestUrl, context, preloadedState, renderApp, webExtractor) {
+exports.render = function (requestUrl, context, preloadedState, renderApp, webExtractor) {
   // Bind webExtractor as "this" for collectChunks call.
   const collectWebChunks = webExtractor.collectChunks.bind(webExtractor);
 

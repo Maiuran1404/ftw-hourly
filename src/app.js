@@ -40,12 +40,6 @@ import defaultMessages from './translations/en.json';
 // If you are using a non-english locale, point `messagesInLocale` to correct .json file
 import messagesInLocale from './translations/fr.json';
 
-
-function initializeAnalytics() {
-  ReactGA.initialize("G-KZKW6CBTP7");
-  ReactGA.pageview('/Homepage')
-}
-
 // If translation key is missing from `messagesInLocale` (e.g. fr.json),
 // corresponding key will be added to messages from `defaultMessages` (en.json)
 // to prevent missing translation key errors.
@@ -91,7 +85,6 @@ const setupLocale = () => {
 export const ClientApp = props => {
   const { store } = props;
   setupLocale();
-  initializeAnalytics();
   return (
     <IntlProvider locale={config.locale} messages={localeMessages} textComponent="span">
       <Provider store={store}>
