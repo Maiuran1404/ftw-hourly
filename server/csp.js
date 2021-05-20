@@ -26,6 +26,7 @@ const defaultDirectives = {
     'events.mapbox.com',
 
     // Google Analytics
+    'www.googletagmanager.com',
     'www.google-analytics.com',
     'stats.g.doubleclick.net',
 
