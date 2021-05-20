@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactDOMServer from 'react-dom/server';
-
+import ReactGA from 'react-ga';
 // react-dates needs to be initialized before using any react-dates component
 // https://github.com/airbnb/react-dates#initialize
 // NOTE: Initializing it here will initialize it also for app.test.js
@@ -39,6 +39,12 @@ import defaultMessages from './translations/en.json';
 // Step 3:
 // If you are using a non-english locale, point `messagesInLocale` to correct .json file
 import messagesInLocale from './translations/fr.json';
+
+
+function initializeAnalytics() {
+  ReactGA.initialize("G-KZKW6CBTP7");
+  ReactGA.pageview('/Homepage')
+}
 
 // If translation key is missing from `messagesInLocale` (e.g. fr.json),
 // corresponding key will be added to messages from `defaultMessages` (en.json)
@@ -85,6 +91,7 @@ const setupLocale = () => {
 export const ClientApp = props => {
   const { store } = props;
   setupLocale();
+  initializeAnalytics();
   return (
     <IntlProvider locale={config.locale} messages={localeMessages} textComponent="span">
       <Provider store={store}>
