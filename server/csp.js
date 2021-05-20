@@ -27,6 +27,7 @@ const defaultDirectives = {
 
     // Google Analytics
     'www.googletagmanager.com',
+    'https://www.googletagmanager.com/gtag/js?id=G-TW0ZFZBQYG',
     'www.google-analytics.com',
     'stats.g.doubleclick.net',
 
@@ -55,6 +56,7 @@ const defaultDirectives = {
 
     // Google Analytics
     'www.googletagmanager.com',
+    'https://www.googletagmanager.com/gtag/js?id=G-TW0ZFZBQYG',
     'www.google.com',
     'www.google-analytics.com',
     'stats.g.doubleclick.net',
@@ -67,6 +69,7 @@ const defaultDirectives = {
     unsafeEval,
     data,
     'https://www.googletagmanager.com',
+    'https://www.googletagmanager.com/gtag/js?id=G-TW0ZFZBQYG',
     'maps.googleapis.com',
     'api.mapbox.com',
     '*.google-analytics.com',
