@@ -32,6 +32,7 @@ const defaultDirectives = {
     'stats.g.doubleclick.net',
 
     'sentry.io',
+    'https://o694656.ingest.sentry.io',
     '*.stripe.com',
   ],
   fontSrc: [self, data, 'assets-sharetribecom.sharetribe.com', 'fonts.gstatic.com'],
