@@ -75,6 +75,7 @@ const defaultDirectives = {
     'api.mapbox.com',
     '*.google-analytics.com',
     'https://o694656.ingest.sentry.io',
+    'https://connect.facebook.net',
     'js.stripe.com',
   ],
   styleSrc: [self, unsafeInline, 'fonts.googleapis.com', 'api.mapbox.com'],
