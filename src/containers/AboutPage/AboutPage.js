@@ -25,7 +25,7 @@ const AboutPage = () => {
       schema={{
         '@context': 'http://schema.org',
         '@type': 'AboutPage',
-        description: 'About Zencha',
+        description: 'About Avita',
         name: 'About page',
       }}
     >
@@ -54,13 +54,13 @@ const AboutPage = () => {
                 Whether it is the alignment of asanas or being able to set the focus of the class,
                 we all have our own struggles and goals. Some of these cannot be addressed in a
                 regular class of twenty yogis. Working together with the experienced yoga teachers
-                from Zencha, you can together create just the right class for you.
+                from Avita, you can together create just the right class for you.
               </p>
 
               <h3 className={css.subtitle}>Are you a yoga teacher?</h3>
 
               <p>
-                Zencha offers you a platform through which you can reach thousands of yoga
+                Avita offers you a platform through which you can reach thousands of yoga
                 practitioners. Offering private yoga classes through Yogatime offers you a
                 possibility to grow your customer base and earn some extra income on top of your
                 regular classes.

@@ -96,7 +96,7 @@ const streetAddress = 'Van de Sande Bakhuijzenstraat 4';
 const canonicalRootURL = process.env.REACT_APP_CANONICAL_ROOT_URL;
 
 // Site title is needed in meta tags (bots and social media sharing reads those)
-const siteTitle = 'Zencha';
+const siteTitle = 'Avita';
 
 // Twitter handle is needed in meta tags (twitter:site). Start it with '@' character
 const siteTwitterHandle = '@sharetribe';
@@ -105,7 +105,7 @@ const siteTwitterHandle = '@sharetribe';
 const siteInstagramPage = null;
 
 // Facebook page is used in SEO schema (http://schema.org/Organization)
-const siteFacebookPage = 'https://www.facebook.com/ZenchaGlobal/';
+const siteFacebookPage = 'https://www.facebook.com/AvitaGlobal/';
 
 // Social logins & SSO
 
