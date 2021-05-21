@@ -61,7 +61,7 @@ const defaultDirectives = {
     'www.google.com',
     'www.google-analytics.com',
     'stats.g.doubleclick.net',
-
+    'https://o694656.ingest.sentry.io',
     '*.stripe.com',
   ],
   scriptSrc: [
@@ -74,6 +74,7 @@ const defaultDirectives = {
     'maps.googleapis.com',
     'api.mapbox.com',
     '*.google-analytics.com',
+    'https://o694656.ingest.sentry.io',
     'js.stripe.com',
   ],
   styleSrc: [self, unsafeInline, 'fonts.googleapis.com', 'api.mapbox.com'],
