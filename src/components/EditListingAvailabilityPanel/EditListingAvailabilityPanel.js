@@ -53,12 +53,11 @@ const Weekday = props => {
       <div className={css.entries}>
         {availabilityPlan && hasEntry
           ? getEntries(availabilityPlan, dayOfWeek).map(e => {
-              return (
-                <span className={css.entry} key={`${e.dayOfWeek}${e.startTime}`}>{`${
-                  e.startTime
+            return (
+              <span className={css.entry} key={`${e.dayOfWeek}${e.startTime}`}>{`${e.startTime
                 } - ${e.endTime === '00:00' ? '24:00' : e.endTime}`}</span>
-              );
-            })
+            );
+          })
           : null}
       </div>
     </div>
@@ -105,11 +104,11 @@ const createEntriesFromSubmitValues = values =>
       // Note: This template doesn't support seats yet.
       return startTime && endTime
         ? {
-            dayOfWeek,
-            seats: 1,
-            startTime,
-            endTime: endTime === '24:00' ? '00:00' : endTime,
-          }
+          dayOfWeek,
+          seats: 1,
+          startTime,
+          endTime: endTime === '24:00' ? '00:00' : endTime,
+        }
         : null;
     });
 
@@ -167,13 +166,13 @@ const EditListingAvailabilityPanel = props => {
     type: 'availability-plan/time',
     timezone: defaultTimeZone(),
     entries: [
-      // { dayOfWeek: 'mon', startTime: '09:00', endTime: '17:00', seats: 1 },
-      // { dayOfWeek: 'tue', startTime: '09:00', endTime: '17:00', seats: 1 },
-      // { dayOfWeek: 'wed', startTime: '09:00', endTime: '17:00', seats: 1 },
-      // { dayOfWeek: 'thu', startTime: '09:00', endTime: '17:00', seats: 1 },
-      // { dayOfWeek: 'fri', startTime: '09:00', endTime: '17:00', seats: 1 },
-      // { dayOfWeek: 'sat', startTime: '09:00', endTime: '17:00', seats: 1 },
-      // { dayOfWeek: 'sun', startTime: '09:00', endTime: '17:00', seats: 1 },
+      { dayOfWeek: 'mon', startTime: '09:00', endTime: '17:00', seats: 1 },
+      { dayOfWeek: 'tue', startTime: '09:00', endTime: '17:00', seats: 1 },
+      { dayOfWeek: 'wed', startTime: '09:00', endTime: '17:00', seats: 1 },
+      { dayOfWeek: 'thu', startTime: '09:00', endTime: '17:00', seats: 1 },
+      { dayOfWeek: 'fri', startTime: '09:00', endTime: '17:00', seats: 1 },
+      { dayOfWeek: 'sat', startTime: '09:00', endTime: '17:00', seats: 1 },
+      { dayOfWeek: 'sun', startTime: '09:00', endTime: '17:00', seats: 1 },
     ],
   };
   const availabilityPlan = currentListing.attributes.availabilityPlan || defaultAvailabilityPlan;
@@ -233,8 +232,8 @@ const EditListingAvailabilityPanel = props => {
             }}
           />
         ) : (
-          <FormattedMessage id="EditListingAvailabilityPanel.createListingTitle" />
-        )}
+            <FormattedMessage id="EditListingAvailabilityPanel.createListingTitle" />
+          )}
       </h1>
 
       <section className={css.section}>
@@ -267,11 +266,11 @@ const EditListingAvailabilityPanel = props => {
             {fetchExceptionsInProgress ? (
               <FormattedMessage id="EditListingAvailabilityPanel.availabilityExceptionsTitleNoCount" />
             ) : (
-              <FormattedMessage
-                id="EditListingAvailabilityPanel.availabilityExceptionsTitle"
-                values={{ count: exceptionCount }}
-              />
-            )}
+                <FormattedMessage
+                  id="EditListingAvailabilityPanel.availabilityExceptionsTitle"
+                  values={{ count: exceptionCount }}
+                />
+              )}
           </h2>
         </header>
         {fetchExceptionsInProgress ? (
@@ -283,47 +282,47 @@ const EditListingAvailabilityPanel = props => {
             <FormattedMessage id="EditListingAvailabilityPanel.noExceptions" />
           </div>
         ) : (
-          <div className={css.exceptions}>
-            {sortedAvailabilityExceptions.map(availabilityException => {
-              const { start, end, seats } = availabilityException.attributes;
-              return (
-                <div key={availabilityException.id.uuid} className={css.exception}>
-                  <div className={css.exceptionHeader}>
-                    <div className={css.exceptionAvailability}>
-                      <div
-                        className={classNames(css.exceptionAvailabilityDot, {
-                          [css.isAvailable]: seats > 0,
-                        })}
-                      />
-                      <div className={css.exceptionAvailabilityStatus}>
-                        {seats > 0 ? (
-                          <FormattedMessage id="EditListingAvailabilityPanel.exceptionAvailable" />
-                        ) : (
-                          <FormattedMessage id="EditListingAvailabilityPanel.exceptionNotAvailable" />
-                        )}
+              <div className={css.exceptions}>
+                {sortedAvailabilityExceptions.map(availabilityException => {
+                  const { start, end, seats } = availabilityException.attributes;
+                  return (
+                    <div key={availabilityException.id.uuid} className={css.exception}>
+                      <div className={css.exceptionHeader}>
+                        <div className={css.exceptionAvailability}>
+                          <div
+                            className={classNames(css.exceptionAvailabilityDot, {
+                              [css.isAvailable]: seats > 0,
+                            })}
+                          />
+                          <div className={css.exceptionAvailabilityStatus}>
+                            {seats > 0 ? (
+                              <FormattedMessage id="EditListingAvailabilityPanel.exceptionAvailable" />
+                            ) : (
+                                <FormattedMessage id="EditListingAvailabilityPanel.exceptionNotAvailable" />
+                              )}
+                          </div>
+                        </div>
+                        <button
+                          className={css.removeExceptionButton}
+                          onClick={() =>
+                            onDeleteAvailabilityException({ id: availabilityException.id })
+                          }
+                        >
+                          <IconClose size="normal" className={css.removeIcon} />
+                        </button>
                       </div>
+                      <TimeRange
+                        className={css.timeRange}
+                        startDate={start}
+                        endDate={end}
+                        dateType={DATE_TYPE_DATETIME}
+                        timeZone={availabilityPlan.timezone}
+                      />
                     </div>
-                    <button
-                      className={css.removeExceptionButton}
-                      onClick={() =>
-                        onDeleteAvailabilityException({ id: availabilityException.id })
-                      }
-                    >
-                      <IconClose size="normal" className={css.removeIcon} />
-                    </button>
-                  </div>
-                  <TimeRange
-                    className={css.timeRange}
-                    startDate={start}
-                    endDate={end}
-                    dateType={DATE_TYPE_DATETIME}
-                    timeZone={availabilityPlan.timezone}
-                  />
-                </div>
-              );
-            })}
-          </div>
-        )}
+                  );
+                })}
+              </div>
+            )}
         {exceptionCount <= MAX_EXCEPTIONS_COUNT ? (
           <InlineTextButton
             className={css.addExceptionButton}
