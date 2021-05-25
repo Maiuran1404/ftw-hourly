@@ -34,6 +34,7 @@ const defaultDirectives = {
     'sentry.io',
     'https://o694656.ingest.sentry.io',
     '*.stripe.com',
+    'https://static.hotjar.com/c/hotjar-2419018.js?sv=6'
   ],
   fontSrc: [self, data, 'assets-sharetribecom.sharetribe.com', 'fonts.gstatic.com'],
   frameSrc: [self, '*.stripe.com'],
@@ -63,6 +64,7 @@ const defaultDirectives = {
     'stats.g.doubleclick.net',
     'https://o694656.ingest.sentry.io',
     '*.stripe.com',
+    'https://static.hotjar.com/c/hotjar-2419018.js?sv=6',
   ],
   scriptSrc: [
     self,
@@ -77,6 +79,7 @@ const defaultDirectives = {
     'https://o694656.ingest.sentry.io',
     'https://connect.facebook.net',
     'js.stripe.com',
+    'https://static.hotjar.com/c/hotjar-2419018.js?sv=6',
   ],
   styleSrc: [self, unsafeInline, 'fonts.googleapis.com', 'api.mapbox.com'],
 };
