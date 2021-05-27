@@ -38,10 +38,10 @@ const defaultDirectives = {
     'https://widget.intercom.io/widget/zyktpfju',
     'wss://nexus-websocket-a.intercom.io',
     'https://api-iam.intercom.io/messenger/web/ping',
-    'https://api-iam.intercom.io/',
+    'https://api-iam.intercom.io/*',
     'https://js.intercomcdn.com/vendor-modern.e2013c7e.js',
     'https://api-iam.intercom.io/messenger/web/metrics',
-    'https://js.intercomcdn.com/',
+    'https://js.intercomcdn.com/*',
     'https://js.intercomcdn.com/frame-modern.812aa270.js'
 
   ],
@@ -76,11 +76,11 @@ const defaultDirectives = {
     'https://static.hotjar.com/c/hotjar-2419018.js?sv=6',
     'https://widget.intercom.io/widget/zyktpfju',
     'https://api-iam.intercom.io/messenger/web/ping',
-    'https://api-iam.intercom.io/',
+    'https://api-iam.intercom.io/*',
     'wss://nexus-websocket-a.intercom.io',
     'https://js.intercomcdn.com/vendor-modern.e2013c7e.js',
     'https://api-iam.intercom.io/messenger/web/metrics',
-    'https://js.intercomcdn.com/',
+    'https://js.intercomcdn.com/*',
     'https://js.intercomcdn.com/frame-modern.812aa270.js'
   ],
   scriptSrc: [
@@ -101,9 +101,9 @@ const defaultDirectives = {
     'https://api-iam.intercom.io/messenger/web/ping',
     'https://api-iam.intercom.io/',
     'https://js.intercomcdn.com/vendor-modern.e2013c7e.js',
-    'wss://nexus-websocket-a.intercom.io',
+    'wss://nexus-websocket-a.intercom.io/*',
     'https://api-iam.intercom.io/messenger/web/metrics',
-    'https://js.intercomcdn.com/',
+    'https://js.intercomcdn.com/*',
     'https://js.intercomcdn.com/frame-modern.812aa270.js'
   ],
   styleSrc: [self, unsafeInline, 'fonts.googleapis.com', 'api.mapbox.com'],
