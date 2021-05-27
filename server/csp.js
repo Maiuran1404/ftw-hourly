@@ -107,6 +107,7 @@ const defaultDirectives = {
     'https://api-iam.intercom.io/messenger/web/metrics',
     'https://js.intercomcdn.com/frame-modern.812aa270.js',
     'https://js.intercomcdn.com/*',
+    'https://script.hotjar.com'
   ],
   styleSrc: [self, unsafeInline, 'fonts.googleapis.com', 'api.mapbox.com', 'https://widget.intercom.io/widget/zyktpfju', 'https://js.intercomcdn.com/frame-modern.812aa270.js'],
 };
