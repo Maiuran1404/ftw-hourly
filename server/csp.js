@@ -36,7 +36,9 @@ const defaultDirectives = {
     '*.stripe.com',
     'https://static.hotjar.com/c/hotjar-2419018.js?sv=6',
     'https://widget.intercom.io/widget/zyktpfju',
-    'wss://nexus-websocket-a.intercom.io'
+    'wss://nexus-websocket-a.intercom.io',
+    'https://api-iam.intercom.io/messenger/web/ping',
+    'https://api-iam.intercom.io/',
   ],
   fontSrc: [self, data, 'assets-sharetribecom.sharetribe.com', 'fonts.gstatic.com'],
   frameSrc: [self, '*.stripe.com'],
@@ -68,6 +70,8 @@ const defaultDirectives = {
     '*.stripe.com',
     'https://static.hotjar.com/c/hotjar-2419018.js?sv=6',
     'https://widget.intercom.io/widget/zyktpfju',
+    'https://api-iam.intercom.io/messenger/web/ping',
+    'https://api-iam.intercom.io/',
     'wss://nexus-websocket-a.intercom.io'
   ],
   scriptSrc: [
@@ -85,6 +89,8 @@ const defaultDirectives = {
     'js.stripe.com',
     'https://static.hotjar.com/c/hotjar-2419018.js?sv=6',
     'https://widget.intercom.io/widget/zyktpfju',
+    'https://api-iam.intercom.io/messenger/web/ping',
+    'https://api-iam.intercom.io/',
     'wss://nexus-websocket-a.intercom.io'
   ],
   styleSrc: [self, unsafeInline, 'fonts.googleapis.com', 'api.mapbox.com'],
