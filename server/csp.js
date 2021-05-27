@@ -45,7 +45,7 @@ const defaultDirectives = {
     'https://js.intercomcdn.com/frame-modern.812aa270.js'
 
   ],
-  fontSrc: [self, data, 'assets-sharetribecom.sharetribe.com', 'fonts.gstatic.com'],
+  fontSrc: [self, data, 'assets-sharetribecom.sharetribe.com', 'fonts.gstatic.com', 'https://js.intercomcdn.com/fonts/proximanova-semibold.46e3f047.woff'],
   frameSrc: [self, '*.stripe.com', 'https://widget.intercom.io/widget/zyktpfju', 'https://js.intercomcdn.com/frame-modern.812aa270.js'],
   imgSrc: [
     self,
