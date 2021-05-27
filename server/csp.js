@@ -39,6 +39,7 @@ const defaultDirectives = {
     'wss://nexus-websocket-a.intercom.io',
     'https://api-iam.intercom.io/messenger/web/ping',
     'https://api-iam.intercom.io/',
+    'https://js.intercomcdn.com/vendor-modern.e2013c7e.js',
   ],
   fontSrc: [self, data, 'assets-sharetribecom.sharetribe.com', 'fonts.gstatic.com'],
   frameSrc: [self, '*.stripe.com'],
@@ -72,7 +73,8 @@ const defaultDirectives = {
     'https://widget.intercom.io/widget/zyktpfju',
     'https://api-iam.intercom.io/messenger/web/ping',
     'https://api-iam.intercom.io/',
-    'wss://nexus-websocket-a.intercom.io'
+    'wss://nexus-websocket-a.intercom.io',
+    'https://js.intercomcdn.com/vendor-modern.e2013c7e.js',
   ],
   scriptSrc: [
     self,
@@ -91,6 +93,7 @@ const defaultDirectives = {
     'https://widget.intercom.io/widget/zyktpfju',
     'https://api-iam.intercom.io/messenger/web/ping',
     'https://api-iam.intercom.io/',
+    'https://js.intercomcdn.com/vendor-modern.e2013c7e.js',
     'wss://nexus-websocket-a.intercom.io'
   ],
   styleSrc: [self, unsafeInline, 'fonts.googleapis.com', 'api.mapbox.com'],
