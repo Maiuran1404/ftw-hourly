@@ -35,7 +35,8 @@ const defaultDirectives = {
     'https://o694656.ingest.sentry.io',
     '*.stripe.com',
     'https://static.hotjar.com/c/hotjar-2419018.js?sv=6',
-    'https://widget.intercom.io/widget/zyktpfju'
+    'https://widget.intercom.io/widget/zyktpfju',
+    'wss://nexus-websocket-a.intercom.io'
   ],
   fontSrc: [self, data, 'assets-sharetribecom.sharetribe.com', 'fonts.gstatic.com'],
   frameSrc: [self, '*.stripe.com'],
@@ -66,7 +67,8 @@ const defaultDirectives = {
     'https://o694656.ingest.sentry.io',
     '*.stripe.com',
     'https://static.hotjar.com/c/hotjar-2419018.js?sv=6',
-    'https://widget.intercom.io/widget/zyktpfju'
+    'https://widget.intercom.io/widget/zyktpfju',
+    'wss://nexus-websocket-a.intercom.io'
   ],
   scriptSrc: [
     self,
@@ -82,7 +84,8 @@ const defaultDirectives = {
     'https://connect.facebook.net',
     'js.stripe.com',
     'https://static.hotjar.com/c/hotjar-2419018.js?sv=6',
-    'https://widget.intercom.io/widget/zyktpfju'
+    'https://widget.intercom.io/widget/zyktpfju',
+    'wss://nexus-websocket-a.intercom.io'
   ],
   styleSrc: [self, unsafeInline, 'fonts.googleapis.com', 'api.mapbox.com'],
 };
