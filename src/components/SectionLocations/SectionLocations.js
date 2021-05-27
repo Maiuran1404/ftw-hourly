@@ -53,12 +53,12 @@ const SectionLocations = props => {
         {locationLink(
           'Amsterdam',
           nyImage,
-          's?address=Amsterdam%2C%20North%20Holland%2C%20Netherlands'
+          '?address=Amsterdam%2C%20North%20Holland%2C%20Netherlands&bounds=52.430679%2C5.068426%2C52.318248%2C4.728759'
         )}
         {locationLink(
           'Oslo',
           laImage,
-          's?address=Oslo%2C%20Norway&bounds=60.1351069980695%2C10.951387977184%2C59.8093320107807%2C10.489163013591'
+          's?address=Oslo%2C%20Oslo%2C%20Norway&bounds=59.953814%2C10.945988%2C59.809333%2C10.759139'
         )}
         {locationLink(
           'San Francisco',
