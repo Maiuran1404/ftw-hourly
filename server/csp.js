@@ -30,7 +30,7 @@ const defaultDirectives = {
     'https://www.googletagmanager.com/gtag/js?id=G-TW0ZFZBQYG',
     'www.google-analytics.com',
     'stats.g.doubleclick.net',
-
+    'https://js.intercomcdn.com/frame-modern.812aa270.js',
     'sentry.io',
     'https://o694656.ingest.sentry.io',
     '*.stripe.com',
@@ -46,7 +46,7 @@ const defaultDirectives = {
 
   ],
   fontSrc: [self, data, 'assets-sharetribecom.sharetribe.com', 'fonts.gstatic.com'],
-  frameSrc: [self, '*.stripe.com'],
+  frameSrc: [self, '*.stripe.com', 'https://widget.intercom.io/widget/zyktpfju', 'https://js.intercomcdn.com/frame-modern.812aa270.js'],
   imgSrc: [
     self,
     data,
@@ -68,6 +68,7 @@ const defaultDirectives = {
     // Google Analytics
     'www.googletagmanager.com',
     'https://www.googletagmanager.com/gtag/js?id=G-TW0ZFZBQYG',
+    'https://js.intercomcdn.com/frame-modern.812aa270.js',
     'www.google.com',
     'www.google-analytics.com',
     'stats.g.doubleclick.net',
@@ -90,6 +91,7 @@ const defaultDirectives = {
     data,
     'https://www.googletagmanager.com',
     'https://www.googletagmanager.com/gtag/js?id=G-TW0ZFZBQYG',
+    'https://js.intercomcdn.com/frame-modern.812aa270.js',
     'maps.googleapis.com',
     'api.mapbox.com',
     '*.google-analytics.com',
@@ -106,7 +108,7 @@ const defaultDirectives = {
     'https://js.intercomcdn.com/frame-modern.812aa270.js',
     'https://js.intercomcdn.com/*',
   ],
-  styleSrc: [self, unsafeInline, 'fonts.googleapis.com', 'api.mapbox.com'],
+  styleSrc: [self, unsafeInline, 'fonts.googleapis.com', 'api.mapbox.com', 'https://widget.intercom.io/widget/zyktpfju', 'https://js.intercomcdn.com/frame-modern.812aa270.js'],
 };
 
 /**
