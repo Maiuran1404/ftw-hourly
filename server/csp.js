@@ -42,8 +42,8 @@ const defaultDirectives = {
     'https://js.intercomcdn.com/vendor-modern.e2013c7e.js',
     'https://api-iam.intercom.io/messenger/web/metrics',
     'https://js.intercomcdn.com/*',
-    'https://js.intercomcdn.com/frame-modern.812aa270.js'
-
+    'https://js.intercomcdn.com/frame-modern.812aa270.js',
+    'https://ws3.hotjar.com'
   ],
   fontSrc: [self, data, 'assets-sharetribecom.sharetribe.com', 'fonts.gstatic.com', 'https://js.intercomcdn.com/fonts/proximanova-semibold.46e3f047.woff'],
   frameSrc: [self, '*.stripe.com', 'https://widget.intercom.io/widget/zyktpfju', 'https://js.intercomcdn.com/frame-modern.812aa270.js'],
