@@ -40,7 +40,7 @@ const availabilityMaybe = config.enableAvailability ? [AVAILABILITY] : [];
 // If you want to add a free text field to your listings you can enable the POLICY tab
 export const TABS = [
   DESCRIPTION,
-  // FEATURES,
+  FEATURES,
   //POLICY,
   LOCATION,
   PRICING,
@@ -99,7 +99,7 @@ const tabCompleted = (tab, listing) => {
     case DESCRIPTION:
       return !!(description && title);
     case FEATURES:
-      return !!(publicData && publicData.yogaStyles);
+      return !!(publicData && publicData.category);
     case POLICY:
       return !!(publicData && typeof publicData.rules !== 'undefined');
     case LOCATION:

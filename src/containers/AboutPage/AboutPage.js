@@ -45,29 +45,21 @@ const AboutPage = () => {
 
             <div className={css.contentMain}>
               <h2>
-                Each yoga practitioner is an individual, and each one of us needs different care.
-                Working together with an experienced yoga teacher offers the possibility to rise
-                our practise to a whole new level.
+                Don’t stress about buying, selling, repairing…  Just rent it for any amount hours/days. We deliver it to to your door and pick it up when you are done.
               </h2>
 
               <p>
-                Whether it is the alignment of asanas or being able to set the focus of the class,
-                we all have our own struggles and goals. Some of these cannot be addressed in a
-                regular class of twenty yogis. Working together with the experienced yoga teachers
-                from Avita, you can together create just the right class for you.
+                This is more convenient, more sustainable and you have a greater selection of products you can change between. It's better for you, for the people renting out and for the environment.
               </p>
 
-              <h3 className={css.subtitle}>Are you a yoga teacher?</h3>
+              <h3 className={css.subtitle}>Do you want to rent out your own things?</h3>
 
               <p>
-                Avita offers you a platform through which you can reach thousands of yoga
-                practitioners. Offering private yoga classes through Yogatime offers you a
-                possibility to grow your customer base and earn some extra income on top of your
-                regular classes.
+                Sign up. Take some pictures of the products you want to rent. That's it. When someone books your product, we pick it up and deliver it back to you when they are done. No hassle - simple passive income.
               </p>
               <p>
-                You can also checkout our{' '}
-                <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink>.
+                Curious to get to know us more? Check out our{' '}
+                <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink> page.
 
               </p>
             </div>

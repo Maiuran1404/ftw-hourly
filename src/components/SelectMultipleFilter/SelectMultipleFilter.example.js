@@ -3,10 +3,10 @@ import { withRouter } from 'react-router-dom';
 import SelectMultipleFilter from './SelectMultipleFilter';
 import { stringify, parse } from '../../util/urlHelpers';
 
-const URL_PARAM = 'pub_yogaStyles';
+const URL_PARAM = 'pub_category';
 
 const options = [
-  { key: 'ashtanga', label: 'Ashtanga' },
+  { key: 'electronics', label: 'Electronics' },
   { key: 'hatha', label: 'Hatha' },
   { key: 'kundalini', label: 'Kundalini' },
   { key: 'restorative', label: 'Restorative' },
