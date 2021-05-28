@@ -85,6 +85,11 @@ const Footer = props => {
               <ul className={css.list}>
                 <li className={css.listItem}>
                   <NamedLink name="NewListingPage" className={css.link}>
+
+                  </NamedLink>
+                </li>
+                <li className={css.listItem}>
+                  <NamedLink name="NewListingPage" className={css.link}>
                     <FormattedMessage id="Footer.toNewListingPage" />
                   </NamedLink>
                 </li>
@@ -93,7 +98,7 @@ const Footer = props => {
                     <FormattedMessage id="Footer.toAboutPage" />
                   </NamedLink>
                 </li>
-                <li className={css.listItem}>
+                {/* <li className={css.listItem}>
                   <NamedLink name="LandingPage" className={css.link}>
                     <FormattedMessage id="Footer.toFAQPage" />
                   </NamedLink>
@@ -107,7 +112,7 @@ const Footer = props => {
                   <NamedLink name="AboutPage" to={{ hash: '#contact' }} className={css.link}>
                     <FormattedMessage id="Footer.toContactPage" />
                   </NamedLink>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className={css.searches}>
