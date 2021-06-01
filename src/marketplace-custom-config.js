@@ -39,7 +39,7 @@ export const filters = [
     label: 'Category',
     type: 'SelectSingleFilter',
     group: 'primary',
-    queryParamNames: ['pub_categoy'],
+    queryParamNames: ['pub_category'],
     config: {
       // "key" is the option you see in Flex Console.
       // "label" is set here for the UI only.
