@@ -34,23 +34,24 @@
  */
 
 export const filters = [
-  {
-    id: 'category',
-    label: 'Category',
-    type: 'SelectSingleFilter',
-    group: 'primary',
-    queryParamNames: ['pub_category'],
-    config: {
-      // "key" is the option you see in Flex Console.
-      // "label" is set here for the UI only.
-      // Note: label is not added through the translation files
-      // to make filter customizations a bit easier.
-      options: [
-        { key: 'electronics', label: 'Electronics' },
-        { key: 'games', label: 'Games' },
-      ],
-    },
-  },
+  // {
+  //   id: 'category',
+  //   label: 'Category',
+  //   type: 'SelectSingleFilter',
+  //   group: 'primary',
+  //   queryParamNames: ['pub_category'],
+  //   config: {
+  //     searchMode: 'has_any',
+  //     // "key" is the option you see in Flex Console.
+  //     // "label" is set here for the UI only.
+  //     // Note: label is not added through the translation files
+  //     // to make filter customizations a bit easier.
+  //     options: [
+  //       { key: 'electronics', label: 'Electronics' },
+  //       { key: 'games', label: 'Games' },
+  //     ],
+  //   },
+  // },
   // {
   //   id: 'category',
   //   label: 'Category',
@@ -88,6 +89,21 @@ export const filters = [
     // the keyword search can't be used at the same time.
     // You can turn on/off ordering by distance from config.js file.
     config: {},
+  },
+  {
+    id: 'category',
+    label: 'Category',
+    type: 'SelectSingleFilter',
+    group: 'primary',
+    queryParamNames: ['pub_category'],
+    config: {
+      options: [
+        { key: 'electronics', label: 'Electronics' },
+        { key: 'sports', label: 'Sports' },
+        { key: 'games', label: 'Games' },
+        { key: '10plus', label: '10 plus' },
+      ],
+    },
   },
   // {
   //   id: 'category',

@@ -11,50 +11,42 @@ const PrivacyPolicy = props => {
   // prettier-ignore
   return (
     <div className={classes}>
-      <p className={css.lastUpdated}>Last updated: November 22, 2019</p>
+      <p className={css.lastUpdated}>Last updated: June 2, 2021</p>
 
       <p>
-        Thank you for using Avita! Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Thank you for using Avita! 
+        
+        <br/> <br/>
+        Avita exists to help build connections between people and make the world more open, inclusive and sustainable. In short—to build a world where anyone can belong anywhere. We are a community built on trust. A fundamental part of earning that trust means being clear about how we use your information and protect your human right to privacy.
+        <br/> <br/>
+This Privacy Policy describes how Avita, Inc. and its affiliates (“we,” “us,” or “Avita”), process personal information that we collect through the Avita Platform. Depending on where you live and what you are doing on the Avita Platform, the supplemental privacy pages listed below may apply to you. Please follow the links and review the supplemental information provided there with information about how we process personal information for those regions and services.
       </p>
 
-      <h2>1 Lorem ipsum dolor sit amet</h2>
+      <h2>1 Information needed to use the Avita Platform.</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      We collect personal information about you when you use the Avita Platform. Without it, we may not be able to provide you with all services requested. This information includes:
+
+Contact Information, Account, Profile Information. Such as your first name, last name, phone number, postal address, email address, date of birth, and profile photo, some of which will depend on the features you use.
       </p>
 
-      <h2>2 Sed ut perspiciatis unde</h2>
+      <h2>2 Information you choose to give us.</h2>
       <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-        dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-        consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-        molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+      You can choose to provide us with additional personal information. This information may include:
+
+Additional Profile Information. Such as gender, preferred language(s), city, and personal description. Some of this information as indicated in your account settings is part of your public profile page and will be publicly visible.
+Address Book Contact Information. Address book contacts you import or enter manually.
+Other Information. Such as when you fill in a form, add information to your account, respond to surveys, post to community forums, participate in promotions, communicate with our customer care team and other Members, or share your experience with us. This may include health information if you choose to share it with us.
       </p>
 
-      <h2>3 At vero eos et accusamus</h2>
+      <h2>3 Information Automatically Collected by Using the Avita Platform and our Payment Services.</h2>
       <p>
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-        voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-        cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-        est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
-        libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-        maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
-        et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
-        sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
-        doloribus asperiores repellat
+      When you use the Avita Platform and Payment Services, we automatically collect personal information. This information may include:
+
+Geo-location Information. Such as precise or approximate location determined from your IP address or mobile device’s GPS depending on your device settings. We may also collect this information when you’re not using the app if you enable this through your settings or device permissions.
+Usage Information. Such as the pages or content you view, searches for Listings, bookings you have made, and other actions on the Avita Platform.
+Log Data and Device Information. Such as details about how you’ve used the Avita Platform (including if you clicked on links to third party applications), IP address, access dates and times, hardware and software information, device information, device event information, unique identifiers, crash data, cookie data, and the pages you’ve viewed or engaged with before or after using the Avita Platform. We may collect this information even if you haven’t created an Avita account or logged in.
+Cookies and Similar Technologies as described in our Cookie Policy.
+Payment Transaction Information. Such as payment instrument used, date and time, payment amount, payment instrument expiration date and billing postcode, PayPal email address, IBAN information, your address and other related transaction details.
       </p>
     </div>
   );

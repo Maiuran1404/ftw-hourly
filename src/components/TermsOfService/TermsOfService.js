@@ -11,50 +11,48 @@ const TermsOfService = props => {
   // prettier-ignore
   return (
     <div className={classes}>
-      <p className={css.lastUpdated}>Last updated: November 22, 2019</p>
+      <p className={css.lastUpdated}>Last updated: June 2, 2021</p>
 
       <p>
-        Thank you for using Avita! Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Thank you for using Avita!
+        <br /><br />
+        These Terms of Service (“Terms”) are a binding legal agreement between you and Avita that govern your use of the websites, applications, and other offerings from Avita (collectively, the “Avita Platform”). When used in these Terms, “Avita,” “we,” “us,” or “our” refers to the Avita entity with whom you are contracting.
+        <br /><br />
+The Avita Platform offers an online venue that enables users (“Members”) to publish, offer, search for, and book services. Members who publish and offer services are “Hosts” and Members who search for, book, or use services are “Guests.” Hosts offer products ("products"). You must register an account to access and use many features of the Avita Platform, and must keep your account information accurate. As the provider of the Avita Platform, Avita does not own, control, offer or manage any Listings or Host Services. Avita is not a party to the contracts concluded directly between Hosts and Guests, nor is Avita a broker or insurer. Avita is not acting as an agent in any capacity for any Member, except as specified in the Payments Terms of Service (“Payment Terms”).
+<br /><br />
+We maintain other terms and policies that supplement these Terms like our Privacy Policy, which describes our collection and use of personal data, and our Payments Terms, which govern any payment services provided to Members by the Avita payment entities ("Avita Payments").
+<br /><br />
+If you Host, you are responsible for understanding and complying with all laws, rules, regulations and contracts with third parties that apply to your Host Services.
       </p>
 
-      <h2>1 Lorem ipsum dolor sit amet</h2>
+      <h2>1: Our Mission & Responsibility.</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Our mission is to create a world where you own less and live more.
+        From sports equipment to cameras to houseboats, browse through millions of Listings
+        to find the ones that fit the way you like to live. Learn more about a Listing
+        by reviewing the description and photos, the Host profile, and Guest reviews.
+        If you have questions, just message the Host.
       </p>
 
-      <h2>2 Sed ut perspiciatis unde</h2>
+      <h2>2 Your Responsibilities as a Guest.</h2>
       <p>
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-        voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-        consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-        dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-        consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-        molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        You are responsible and liable for your own acts and omissions and are also responsible for the
+        acts and omissions of anyone you invite to join in using any Product.
+        For example, this means: (i) you are responsible for leaving
+        a product in the condition it was in when you received it,
+        and (ii) you must act with integrity, treat others with respect, and comply with applicable
+        laws at all times.
       </p>
 
-      <h2>3 At vero eos et accusamus</h2>
+      <h2>3 Your Responsibilities as a Host</h2>
       <p>
-        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-        voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-        cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
-        est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
-        libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-        maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
-        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
-        et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
-        sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
-        doloribus asperiores repellat
+        You are responsible and liable for your own acts and omissions and are also responsible for
+        the acts and omissions of anyone you allow to participate in providing your Host Services.
+        You are responsible for setting your price and establishing rules and requirements for your Listing.
+        You must describe any and all fees and charges in your Listing description and may not collect any
+        additional fees or charges outside the Avita Platform except those expressly authorized by our Offline Fee Policy.
+        Do not encourage Guests to create third-party accounts, submit reviews, provide their contact information,
+        or take other actions outside the Avita Platform in violation of our Off-Platform Policy.
       </p>
     </div>
   );
