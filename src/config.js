@@ -83,7 +83,7 @@ const listingMinimumPriceSubUnits = 0;
 // Sentry DSN (Data Source Name), a client key for authenticating calls to Sentry
 const sentryDsn = process.env.REACT_APP_SENTRY_DSN;
 
-// If webapp is using SSL (i.e. it's behind 'https' protocol)
+// If webapp is using SSL (i.́e. it's behind 'https' protocol)
 const usingSSL = process.env.REACT_APP_SHARETRIBE_USING_SSL === 'true';
 
 // Address information is used in SEO schema for Organization (http://schema.org/PostalAddress)

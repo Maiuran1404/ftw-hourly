@@ -78,6 +78,20 @@ export const filters = [
   //   },
   // },
   {
+    id: 'category',
+    label: 'Category',
+    type: 'SelectSingleFilter',
+    group: 'primary',
+    queryParamNames: ['pub_category'],
+    config: {
+      options: [
+        { key: 'electronics', label: 'Electronics' },
+        { key: 'sports', label: 'Sports' },
+        { key: 'games', label: 'Games' },
+      ],
+    },
+  },
+  {
     id: 'keyword',
     label: 'Search',
     type: 'KeywordFilter',
@@ -89,21 +103,6 @@ export const filters = [
     // the keyword search can't be used at the same time.
     // You can turn on/off ordering by distance from config.js file.
     config: {},
-  },
-  {
-    id: 'category',
-    label: 'Category',
-    type: 'SelectSingleFilter',
-    group: 'primary',
-    queryParamNames: ['pub_category'],
-    config: {
-      options: [
-        { key: 'electronics', label: 'Electronics' },
-        { key: 'sports', label: 'Sports' },
-        { key: 'games', label: 'Games' },
-        { key: '10plus', label: '10 plus' },
-      ],
-    },
   },
   // {
   //   id: 'category',
