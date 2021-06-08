@@ -48,10 +48,15 @@ const SectionHowItWorks = props => {
         </div>
       </div>
       <div className={css.createListingLink}>
+        <a href='/faq'>
+          <FormattedMessage id="SectionHowItWorks.toHowItWorks" />
+        </a>
+      </div>
+      {/* <div className={css.createListingLink}>
         <OwnListingLink listing={currentUserListing} listingFetched={currentUserListingFetched}>
           <FormattedMessage id="SectionHowItWorks.createListingLink" />
         </OwnListingLink>
-      </div>
+      </div> */}
     </div>
   );
 };
