@@ -87,6 +87,7 @@ export const filters = [
       options: [
         { key: 'electronics', label: 'Electronics' },
         { key: 'sports', label: 'Sports' },
+        { key: 'film_photography', label: 'Film and Photography' },
         { key: 'games', label: 'Games' },
       ],
     },
