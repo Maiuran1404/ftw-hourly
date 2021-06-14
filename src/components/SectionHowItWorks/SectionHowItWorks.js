@@ -4,6 +4,9 @@ import classNames from 'classnames';
 import { FormattedMessage } from '../../util/reactIntl';
 import { propTypes } from '../../util/types';
 import { OwnListingLink } from '../../components';
+import CourierImage from '../../assets/courier.png';
+import SignatureImage from '../../assets/signature.png';
+import PackageImage from '../../assets/package.png';
 
 import css from './SectionHowItWorks.module.css';
 
@@ -22,6 +25,7 @@ const SectionHowItWorks = props => {
       <div className={css.steps}>
         <div className={css.step}>
           <h2 className={css.stepTitle}>
+            <img src={PackageImage} alt={'Icons made by  Freepik (https://www.freepik.com) fromwww.flaticon.com'} height={40} width={40} /> &nbsp;
             <FormattedMessage id="SectionHowItWorks.part1Title" />
           </h2>
           <p>
@@ -31,6 +35,7 @@ const SectionHowItWorks = props => {
 
         <div className={css.step}>
           <h2 className={css.stepTitle}>
+            <img src={CourierImage} alt={'Icons made by  Freepik (https://www.freepik.com) fromwww.flaticon.com'} height={40} width={40} /> &nbsp;
             <FormattedMessage id="SectionHowItWorks.part2Title" />
           </h2>
           <p>
@@ -40,6 +45,7 @@ const SectionHowItWorks = props => {
 
         <div className={css.step}>
           <h2 className={css.stepTitle}>
+            <img src={SignatureImage} alt={'Icons made by  Freepik (https://www.freepik.com) fromwww.flaticon.com'} height={40} width={40} /> &nbsp;
             <FormattedMessage id="SectionHowItWorks.part3Title" />
           </h2>
           <p>
