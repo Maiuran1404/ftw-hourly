@@ -58,7 +58,8 @@ const SectionLocations = props => {
         {locationLink(
           'Oslo',
           laImage,
-          's?address=Oslo%2C%20Oslo%2C%20Norway&bounds=59.953814%2C10.945988%2C59.809333%2C10.759139'
+          //http://localhost:3000/s?bounds=59.99150957%2C10.88047726%2C59.84719282%2C10.67399192&mapSearch=true
+          's?address=Oslo%2C%20Oslo%2C%20Norway&bounds=59.99150957%2C10.88047726%2C59.84719282%2C10.67399192'
         )}
         {locationLink(
           'San Francisco',
