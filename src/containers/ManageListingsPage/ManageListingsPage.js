@@ -81,8 +81,8 @@ export class ManageListingsPageComponent extends Component {
           />
         </h1>
       ) : (
-        noResults
-      );
+          noResults
+        );
 
     const page = queryParams ? queryParams.page : 1;
     const paginationLinks =
@@ -138,7 +138,7 @@ export class ManageListingsPageComponent extends Component {
                   />
                 ))}
               </div>
-              {paginationLinks}
+              {/* {paginationLinks} */}
             </div>
           </LayoutWrapperMain>
           <LayoutWrapperFooter>
