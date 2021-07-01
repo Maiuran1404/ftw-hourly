@@ -14,13 +14,13 @@ const TermsOfService = props => {
       <p className={css.lastUpdated}>Last updated: June 2, 2021</p>
 
       <p>
-        Thank you for using Avita!
+        Thank you for using Unicorns!
         <br /><br />
-        These Terms of Service (“Terms”) are a binding legal agreement between you and Avita that govern your use of the websites, applications, and other offerings from Avita (collectively, the “Avita Platform”). When used in these Terms, “Avita,” “we,” “us,” or “our” refers to the Avita entity with whom you are contracting.
+        These Terms of Service (“Terms”) are a binding legal agreement between you and Unicorns that govern your use of the websites, applications, and other offerings from Unicorns (collectively, the “Unicorns Platform”). When used in these Terms, “Unicorns,” “we,” “us,” or “our” refers to the Unicorns entity with whom you are contracting.
         <br /><br />
-The Avita Platform offers an online venue that enables users (“Members”) to publish, offer, search for, and book services. Members who publish and offer services are “Hosts” and Members who search for, book, or use services are “Guests.” Hosts offer products ("products"). You must register an account to access and use many features of the Avita Platform, and must keep your account information accurate. As the provider of the Avita Platform, Avita does not own, control, offer or manage any Listings or Host Services. Avita is not a party to the contracts concluded directly between Hosts and Guests, nor is Avita a broker or insurer. Avita is not acting as an agent in any capacity for any Member, except as specified in the Payments Terms of Service (“Payment Terms”).
+The Unicorns Platform offers an online venue that enables users (“Members”) to publish, offer, search for, and book services. Members who publish and offer services are “Hosts” and Members who search for, book, or use services are “Guests.” Hosts offer products ("products"). You must register an account to access and use many features of the Unicorns Platform, and must keep your account information accurate. As the provider of the Unicorns Platform, Unicorns does not own, control, offer or manage any Listings or Host Services. Unicorns is not a party to the contracts concluded directly between Hosts and Guests, nor is Unicorns a broker or insurer. Unicorns is not acting as an agent in any capacity for any Member, except as specified in the Payments Terms of Service (“Payment Terms”).
 <br /><br />
-We maintain other terms and policies that supplement these Terms like our Privacy Policy, which describes our collection and use of personal data, and our Payments Terms, which govern any payment services provided to Members by the Avita payment entities ("Avita Payments").
+We maintain other terms and policies that supplement these Terms like our Privacy Policy, which describes our collection and use of personal data, and our Payments Terms, which govern any payment services provided to Members by the Unicorns payment entities ("Unicorns Payments").
 <br /><br />
 If you Host, you are responsible for understanding and complying with all laws, rules, regulations and contracts with third parties that apply to your Host Services.
       </p>
@@ -50,9 +50,9 @@ If you Host, you are responsible for understanding and complying with all laws, 
         the acts and omissions of anyone you allow to participate in providing your Host Services.
         You are responsible for setting your price and establishing rules and requirements for your Listing.
         You must describe any and all fees and charges in your Listing description and may not collect any
-        additional fees or charges outside the Avita Platform except those expressly authorized by our Offline Fee Policy.
+        additional fees or charges outside the Unicorns Platform except those expressly authorized by our Offline Fee Policy.
         Do not encourage Guests to create third-party accounts, submit reviews, provide their contact information,
-        or take other actions outside the Avita Platform in violation of our Off-Platform Policy.
+        or take other actions outside the Unicorns Platform in violation of our Off-Platform Policy.
       </p>
     </div>
   );
