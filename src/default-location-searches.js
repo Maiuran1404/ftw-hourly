@@ -11,7 +11,7 @@ const defaultLocations = [
   {
     id: 'default-amsterdam',
     predictionPlace: {
-      address: 'Amsterdam, North Holland, Netherlands',
+      address: 'Oslo, Norway',
     },
   },
   {

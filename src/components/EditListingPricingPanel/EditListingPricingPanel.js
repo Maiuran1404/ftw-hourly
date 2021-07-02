@@ -45,8 +45,8 @@ const EditListingPricingPanel = props => {
       }}
     />
   ) : (
-    <FormattedMessage id="EditListingPricingPanel.createListingTitle" />
-  );
+      <FormattedMessage id="EditListingPricingPanel.createListingTitle" />
+    );
 
   const priceCurrencyValid = price instanceof Money ? price.currency === config.currency : true;
   const form = priceCurrencyValid ? (
@@ -63,10 +63,10 @@ const EditListingPricingPanel = props => {
       fetchErrors={errors}
     />
   ) : (
-    <div className={css.priceCurrencyInvalid}>
-      <FormattedMessage id="EditListingPricingPanel.listingPriceCurrencyInvalid" />
-    </div>
-  );
+      <div className={css.priceCurrencyInvalid}>
+        <FormattedMessage id="EditListingPricingPanel.listingPriceCurrencyInvalid" />
+      </div>
+    );
 
   return (
     <div className={classes}>
