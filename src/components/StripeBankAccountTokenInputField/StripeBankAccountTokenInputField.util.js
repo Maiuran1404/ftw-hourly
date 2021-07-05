@@ -117,6 +117,10 @@ export const translateStripeError = (country, intl, stripeError) => {
         id: 'StripeBankAccountTokenInputField.genericStripeErrorIban',
         defaultMessage: stripeError.message,
       },
+      {
+        id: 'StripeBankAccountTokenInputField.norwayIbanExplanation',
+        defaultMessage: 'Find Iban here',
+      },
       { country }
     );
   } else {
