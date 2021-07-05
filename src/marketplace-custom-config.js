@@ -86,6 +86,8 @@ export const filters = [
     config: {
       options: [
         { key: 'electronics', label: 'Electronics' },
+        { key: 'hiking', label: 'Hiking' },
+        { key: 'beach', label: 'Beach' },
         { key: 'sports', label: 'Sports' },
         { key: 'film_photography', label: 'Film and Photography' },
         { key: 'games', label: 'Games' },
