@@ -107,6 +107,19 @@ const SignupFormComponent = props => (
       });
       const lastNameRequired = validators.required(lastNameRequiredMessage);
 
+      // phone number
+      const phoneNumberLabel = intl.formatMessage({
+        id: 'SignupForm.phoneNumberLabel',
+      });
+      const phoneNumberPlaceholder = intl.formatMessage({
+        id: 'SignupForm.phoneNumberPlaceholder',
+      });
+      const phoneNumberRequiredMessage = intl.formatMessage({
+        id: 'SignupForm.phoneNumberRequired',
+      });
+      const phoneNumberRequired = validators.required(phoneNumberRequiredMessage);
+
+
       const classes = classNames(rootClassName || css.root, className);
       const submitInProgress = inProgress;
       const submitDisabled = invalid || submitInProgress;
@@ -140,6 +153,15 @@ const SignupFormComponent = props => (
               label={emailLabel}
               placeholder={emailPlaceholder}
               validate={validators.composeValidators(emailRequired, emailValid)}
+            />
+            <FieldTextInput
+              type="text"
+              id={formId ? `${formId}.phonenumber` : 'phonenumber'}
+              name="phonenumber"
+              autoComplete="phonenumber"
+              label={phoneNumberLabel}
+              placeholder={phoneNumberPlaceholder}
+              validate={phoneNumberRequired}
             />
             <div className={css.name}>
               <FieldTextInput
