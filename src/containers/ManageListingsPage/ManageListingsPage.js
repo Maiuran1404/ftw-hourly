@@ -138,7 +138,7 @@ export class ManageListingsPageComponent extends Component {
                   />
                 ))}
               </div>
-              {/* {paginationLinks} */}
+              {paginationLinks}
             </div>
           </LayoutWrapperMain>
           <LayoutWrapperFooter>

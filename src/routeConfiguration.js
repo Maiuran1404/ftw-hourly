@@ -7,7 +7,7 @@ import { NotFoundPage } from './containers';
 // Otherwise, components will import form container eventually and
 // at that point css bundling / imports will happen in wrong order.
 import { NamedRedirect } from './components';
-import ManageListingsPage from './containers/ManageListingsPage/ManageListingsPage';
+
 
 const pageDataLoadingAPI = getPageDataLoadingAPI();
 
@@ -29,9 +29,12 @@ const PrivacyPolicyPage = loadable(() => import(/* webpackChunkName: "PrivacyPol
 const ProfilePage = loadable(() => import(/* webpackChunkName: "ProfilePage" */ './containers/ProfilePage/ProfilePage'));
 const ProfileSettingsPage = loadable(() => import(/* webpackChunkName: "ProfileSettingsPage" */ './containers/ProfileSettingsPage/ProfileSettingsPage'));
 const SearchPage = loadable(() => import(/* webpackChunkName: "SearchPage" */ /* webpackPrefetch: true */  './containers/SearchPage/SearchPage'));
+const ManageListingsPage = loadable(() => import(/* webpackChunkName: "ManageListingsPage" */ './containers/ManageListingsPage/ManageListingsPage'));
 const StripePayoutPage = loadable(() => import(/* webpackChunkName: "StripePayoutPage" */ './containers/StripePayoutPage/StripePayoutPage'));
 const TermsOfServicePage = loadable(() => import(/* webpackChunkName: "TermsOfServicePage" */ './containers/TermsOfServicePage/TermsOfServicePage'));
 const TransactionPage = loadable(() => import(/* webpackChunkName: "TransactionPage" */ './containers/TransactionPage/TransactionPage'));
+
+// import ManageListingsPage from './containers/ManageListingsPage/ManageListingsPage';
 
 // Styleguide helps you to review current components and develop new ones
 const StyleguidePage = loadable(() => import(/* webpackChunkName: "StyleguidePage" */ './containers/StyleguidePage/StyleguidePage'));
@@ -100,6 +103,7 @@ const routeConfiguration = () => {
     {
       path: '/l/managebooking',
       name: 'MangageListingsPage',
+      auth: true,
       component: ManageListingsPage,
       loadData: pageDataLoadingAPI.ManageListingsPage.loadData,
     },
