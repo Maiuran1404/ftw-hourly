@@ -429,30 +429,6 @@ class EditListingWizard extends Component {
                   <>
                     <p className={css.modalMessage}>
                       <FormattedMessage id="EditListingWizard.payoutModalInfo" />
-                      <br /> <br />
-                      <FormattedMessage id="EditListingWizard.ibanInfo" />
-
-                      <a href="https://www.dnb.no/en/business/calculators/Iban.html">
-                        <FormattedMessage id="EditListingWizard.dnb" />
-                      </a>
-
-
-                      <a href="https://www.sparebank1.no/nb/bank/privat/kundeservice/verktoy/iban-og-swift.html">
-                        <FormattedMessage id="EditListingWizard.sparebank" />
-                      </a>
-
-
-                      <a href="https://www.nordea.no/privat/vare-produkter/konto-og-betalinger/iban-kalkulator.html">
-                        <FormattedMessage id="EditListingWizard.nordea" />
-                      </a>
-
-
-                      <a href="https://danskebank.no/privat/faa-hjelp/iban">
-                        <FormattedMessage id="EditListingWizard.danskebank" />
-                      </a>
-
-                      <FormattedMessage id="EditListingWizard.otherbanks" />
-
                     </p>
                     <StripeConnectAccountForm
                       disabled={formDisabled}
