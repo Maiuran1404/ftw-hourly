@@ -429,7 +429,7 @@ class EditListingWizard extends Component {
                   <>
                     <p className={css.modalMessage}>
                       <FormattedMessage id="EditListingWizard.payoutModalInfo" />
-                      <br /> <br />
+                      {/* <br /> <br />
                       <FormattedMessage id="EditListingWizard.ibanInfo" />
 
                       <a href="https://www.dnb.no/en/business/calculators/Iban.html">
@@ -451,7 +451,7 @@ class EditListingWizard extends Component {
                         <FormattedMessage id="EditListingWizard.danskebank" />
                       </a>
 
-                      <FormattedMessage id="EditListingWizard.otherbanks" />
+                      <FormattedMessage id="EditListingWizard.otherbanks" /> */}
                     </p>
                     <StripeConnectAccountForm
                       disabled={formDisabled}
