@@ -90,6 +90,7 @@ export const filters = [
         { key: 'beach', label: 'Beach' },
         { key: 'sports', label: 'Sports' },
         { key: 'film_photography', label: 'Film and Photography' },
+        { key: 'tools', label: 'Tools' },
         { key: 'games', label: 'Games' },
       ],
     },
