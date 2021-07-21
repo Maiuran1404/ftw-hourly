@@ -21,13 +21,15 @@ exports.calculateTotalPriceFromQuantity = (unitPrice, unitCount) => {
 
   // NOTE: We round the total price to the nearest integer.
   //       Payment processors don't support fractional subunits.
+  if (unitCount > 3 && unitCount < 10) {
+    unitCount = 3
+  };
+
   const totalPrice = amountFromUnitPrice.times(unitCount).toNearest(1, Decimal.ROUND_HALF_UP);
   // Get total price as Number (and validate that the conversion is safe)
   const numericTotalPrice = convertDecimalJSToNumber(totalPrice);
 
-  if (unitCount > 3) {
-    numericTotalPrice = numericTotalPrice * 0.4;
-  }
+
 
   return new Money(numericTotalPrice, unitPrice.currency);
 };
