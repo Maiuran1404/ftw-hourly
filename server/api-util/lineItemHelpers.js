@@ -25,6 +25,10 @@ exports.calculateTotalPriceFromQuantity = (unitPrice, unitCount) => {
   // Get total price as Number (and validate that the conversion is safe)
   const numericTotalPrice = convertDecimalJSToNumber(totalPrice);
 
+  if (unitCount > 3) {
+    numericTotalPrice = numericTotalPrice * 0.4;
+  }
+
   return new Money(numericTotalPrice, unitPrice.currency);
 };
 
