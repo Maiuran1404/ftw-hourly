@@ -505,7 +505,7 @@ class FieldDateAndTimeInput extends Component {
           </div>
         </div>
         <div className={css.formRow}>
-          <div className={classNames(css.field, css.endDate)}>
+          <div className={classNames(css.field, css.endDateHidden)}>
             <FieldDateInput
               {...endDateInputProps}
               name="bookingEndDate"
