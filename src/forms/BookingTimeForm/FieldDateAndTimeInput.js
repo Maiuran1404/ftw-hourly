@@ -483,29 +483,29 @@ class FieldDateAndTimeInput extends Component {
               showErrorMessage={false}
               validate={bookingDateRequired('Required')}
             />
-            <FieldSelect
-              name="bookingStartTime"
-              id={formId ? `${formId}.bookingStartTime` : 'bookingStartTime'}
-              className={bookingStartDate ? css.fieldSelect : css.fieldSelectDisabled}
-              selectClassName={bookingStartDate ? css.select : css.selectDisabled}
-              label={startTimeLabel}
-              disabled={startTimeDisabled}
-              onChange={this.onBookingStartTimeChange}
-            >
-              {bookingStartDate ? (
-                availableStartTimes.map(p => (
-                  <option key={p.timeOfDay} value={p.timestamp}>
-                    {p.timeOfDay}
-                  </option>
-                ))
-              ) : (
-                  <option>{placeholderTime}</option>
-                )}
-            </FieldSelect>
           </div>
+          <FieldSelect
+            name="bookingStartTime"
+            id={formId ? `${formId}.bookingStartTime` : 'bookingStartTime'}
+            className={bookingStartDate ? css.fieldSelect : css.fieldSelectDisabled}
+            selectClassName={bookingStartDate ? css.select : css.selectDisabled}
+            label={startTimeLabel}
+            disabled={startTimeDisabled}
+            onChange={this.onBookingStartTimeChange}
+          >
+            {bookingStartDate ? (
+              availableStartTimes.map(p => (
+                <option key={p.timeOfDay} value={p.timestamp}>
+                  {p.timeOfDay}
+                </option>
+              ))
+            ) : (
+                <option>{placeholderTime}</option>
+              )}
+          </FieldSelect>
         </div>
         <div className={css.formRow}>
-          <div className={classNames(css.field, css.endDateHidden)}>
+          <div className={classNames(css.field, css.endDate)}>
             <FieldDateInput
               {...endDateInputProps}
               name="bookingEndDate"
