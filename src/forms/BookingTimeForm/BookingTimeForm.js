@@ -166,7 +166,7 @@ export class BookingTimeFormComponent extends Component {
           };
 
           return (
-            <Form onSubmit={handleSubmit} className={classes} enforcePagePreloadFor="FaqPage">
+            <Form onSubmit={handleSubmit} className={classes} enforcePagePreloadFor="CheckoutPage">
               <FormSpy
                 subscription={{ values: true }}
                 onChange={values => {
