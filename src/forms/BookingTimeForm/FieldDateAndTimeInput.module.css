@@ -57,7 +57,7 @@
   margin-right: 24px;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     bottom: 13px;
@@ -83,7 +83,7 @@
   composes: fieldSelect;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     bottom: 13px;
@@ -133,19 +133,19 @@ you can remove the following code.
 Remember to do required code changes also in FieldDateAndTimeInput.js!
 **/
 
-.field {
+/* .field {
   width: calc(50% - 5px);
   @media (--viewportMedium) {
     width: calc(50% - 12px);
   }
-}
+} */
 
 .startDate {
   width: 100%;
 }
-.endDateHidden {
+/* .endDateHidden {
   display: none;
-}
+} */
 
 .lineBetween,
 .lineBetweenDisabled {

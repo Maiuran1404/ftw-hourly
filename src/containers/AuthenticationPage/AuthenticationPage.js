@@ -120,8 +120,8 @@ export class AuthenticationPageComponent extends Component {
         {isSignupEmailTakenError(signupError) ? (
           <FormattedMessage id="AuthenticationPage.signupFailedEmailAlreadyTaken" />
         ) : (
-          <FormattedMessage id="AuthenticationPage.signupFailed" />
-        )}
+            <FormattedMessage id="AuthenticationPage.signupFailed" />
+          )}
       </div>
     );
 
@@ -130,8 +130,8 @@ export class AuthenticationPageComponent extends Component {
         {isSignupEmailTakenError(confirmError) ? (
           <FormattedMessage id="AuthenticationPage.signupFailedEmailAlreadyTaken" />
         ) : (
-          <FormattedMessage id="AuthenticationPage.signupFailed" />
-        )}
+            <FormattedMessage id="AuthenticationPage.signupFailed" />
+          )}
       </div>
     ) : null;
 
@@ -265,14 +265,14 @@ export class AuthenticationPageComponent extends Component {
     const facebookButtonText = isLogin ? (
       <FormattedMessage id="AuthenticationPage.loginWithFacebook" />
     ) : (
-      <FormattedMessage id="AuthenticationPage.signupWithFacebook" />
-    );
+        <FormattedMessage id="AuthenticationPage.signupWithFacebook" />
+      );
 
     const googleButtonText = isLogin ? (
       <FormattedMessage id="AuthenticationPage.loginWithGoogle" />
     ) : (
-      <FormattedMessage id="AuthenticationPage.signupWithGoogle" />
-    );
+        <FormattedMessage id="AuthenticationPage.signupWithGoogle" />
+      );
     const socialLoginButtonsMaybe = showSocialLogins ? (
       <div className={css.idpButtons}>
         <div className={css.socialButtonsOr}>
@@ -310,13 +310,13 @@ export class AuthenticationPageComponent extends Component {
         {isLogin ? (
           <LoginForm className={css.loginForm} onSubmit={submitLogin} inProgress={authInProgress} />
         ) : (
-          <SignupForm
-            className={css.signupForm}
-            onSubmit={handleSubmitSignup}
-            inProgress={authInProgress}
-            onOpenTermsOfService={() => this.setState({ tosModalOpen: true })}
-          />
-        )}
+            <SignupForm
+              className={css.signupForm}
+              onSubmit={handleSubmitSignup}
+              inProgress={authInProgress}
+              onOpenTermsOfService={() => this.setState({ tosModalOpen: true })}
+            />
+          )}
 
         {socialLoginButtonsMaybe}
       </div>
@@ -371,8 +371,8 @@ export class AuthenticationPageComponent extends Component {
             {sendVerificationEmailInProgress ? (
               <FormattedMessage id="AuthenticationPage.sendingEmail" />
             ) : (
-              <FormattedMessage id="AuthenticationPage.resendEmail" values={{ resendEmailLink }} />
-            )}
+                <FormattedMessage id="AuthenticationPage.resendEmail" values={{ resendEmailLink }} />
+              )}
           </p>
           <p className={css.modalHelperText}>
             <FormattedMessage id="AuthenticationPage.fixEmail" values={{ fixEmailLink }} />
