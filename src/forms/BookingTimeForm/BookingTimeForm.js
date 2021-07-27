@@ -118,11 +118,11 @@ export class BookingTimeFormComponent extends Component {
           const bookingData =
             startDate && endDate
               ? {
-                  unitType,
-                  startDate,
-                  endDate,
-                  timeZone,
-                }
+                unitType,
+                startDate,
+                endDate,
+                timeZone,
+              }
               : null;
 
           const showEstimatedBreakdown =
@@ -166,7 +166,7 @@ export class BookingTimeFormComponent extends Component {
           };
 
           return (
-            <Form onSubmit={handleSubmit} className={classes} enforcePagePreloadFor="CheckoutPage">
+            <Form onSubmit={handleSubmit} className={classes} enforcePagePreloadFor="FaqPage">
               <FormSpy
                 subscription={{ values: true }}
                 onChange={values => {
