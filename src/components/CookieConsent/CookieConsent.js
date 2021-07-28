@@ -54,14 +54,16 @@ class CookieConsent extends Component {
       const classes = classNames(rootClassName || css.root, className);
 
       return (
-        <div className={classes}>
-          <div className={css.message}>
-            <FormattedMessage id="CookieConsent.message" values={{ cookieLink }} />
+        <fr>
+          <div className={classes}>
+            <div className={css.message}>
+              <FormattedMessage id="CookieConsent.message" values={{ cookieLink }} />
+            </div>
+            <button className={css.continueBtn} onClick={this.onAcceptCookies}>
+              <FormattedMessage id="CookieConsent.continue" />
+            </button>
           </div>
-          <button className={css.continueBtn} onClick={this.onAcceptCookies}>
-            <FormattedMessage id="CookieConsent.continue" />
-          </button>
-        </div>
+        </fr>
       );
     }
   }

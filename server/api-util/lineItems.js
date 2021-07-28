@@ -31,6 +31,13 @@ exports.transactionLineItems = (listing, bookingData) => {
   const unitPrice = listing.attributes.price;
   const { startDate, endDate } = bookingData;
 
+  var discountRate = -10;
+  if (unitPrice.amount > 3500) {
+    discountRate = -100;
+  } else {
+    discountRate = -40;
+  }
+
   /**
    * If you want to use pre-defined component and translations for printing the lineItems base price for booking,
    * you should use code line-item/units
@@ -54,7 +61,17 @@ exports.transactionLineItems = (listing, bookingData) => {
     includeFor: ['provider'],
   };
 
-  const lineItems = [booking, providerCommission];
+  const timeDiscount = {
+    code: 'line-item/coupon-discount',
+    //unitPrice: calculateQuantityFromHours(startDate, endDate) > 7 ? new Money(2000, "NOK") : new Money(4000, "NOK"),
+    //unitPrice: new Money(50000, "NOK"),
+    unitPrice: calculateQuantityFromHours(startDate, endDate) > 7 ? new Money(10000, "NOK") : new Money(0, "NOK"),
+    percentage: discountRate,
+    includeFor: ['customer', 'provider'],
+  };
 
+  const lineItems = [booking, providerCommission, timeDiscount];
+  //console.log(calculateQuantityFromHours(startDate, endDate));
+  //console.log(unitPrice.amount);
   return lineItems;
 };

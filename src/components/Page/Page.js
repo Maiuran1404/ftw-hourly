@@ -194,7 +194,7 @@ class PageComponent extends Component {
 
     return (
       <div className={classes}>
-        <CookieConsent />
+
         <Helmet
           htmlAttributes={{
             lang: intl.locale,
@@ -210,7 +210,7 @@ class PageComponent extends Component {
             {schemaArrayJSONString.replace(/</g, '\\u003c')}
           </script>
         </Helmet>
-
+        <CookieConsent />
         <div
           className={css.content}
           style={scrollPositionStyles}
