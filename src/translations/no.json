@@ -432,6 +432,7 @@
   "ListingPage.errorLoadingListingTitle": "Error in loading product",
   "ListingPage.featuresTitle": "Category",
   "ListingPage.processTitle": "Hvordan det fungerer",
+  "ListingPage.contactTitle": "Kontakt oss!",
   "ListingPage.finishListing": "Finish product",
   "ListingPage.hostedBy": "Hosted by {name}",
   "ListingPage.loadingListingMessage": "Loading product...",
