@@ -597,11 +597,12 @@ export class CheckoutPageComponent extends Component {
       ) : null;
 
     const isPaymentExpired = checkIsPaymentExpired(existingTransaction);
-    const hasDefaultPaymentMethod = !!(
-      stripeCustomerFetched &&
-      ensureStripeCustomer(currentUser.stripeCustomer).attributes.stripeCustomerId &&
-      ensurePaymentMethodCard(currentUser.stripeCustomer.defaultPaymentMethod).id
-    );
+    const hasDefaultPaymentMethod = false;
+    // !!(
+    //   stripeCustomerFetched &&
+    //   ensureStripeCustomer(currentUser.stripeCustomer).attributes.stripeCustomerId &&
+    //   ensurePaymentMethodCard(currentUser.stripeCustomer.defaultPaymentMethod).id
+    // );
 
     // Allow showing page when currentUser is still being downloaded,
     // but show payment form only when user info is loaded.
@@ -802,7 +803,8 @@ export class CheckoutPageComponent extends Component {
                   hasHandledCardPayment={hasPaymentIntentUserActionsDone}
                   loadingData={!stripeCustomerFetched}
                   defaultPaymentMethod={
-                    hasDefaultPaymentMethod ? currentUser.stripeCustomer.defaultPaymentMethod : null
+                    null
+                    // hasDefaultPaymentMethod ? currentUser.stripeCustomer.defaultPaymentMethod : null
                   }
                   paymentIntent={paymentIntent}
                   onStripeInitialized={this.onStripeInitialized}
