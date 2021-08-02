@@ -1,4 +1,4 @@
-@import '../../styles/propertySets.css';
+@import "../../styles/propertySets.css";
 
 /* Booking form inside modalContainer needs special handling */
 /* since "inMobile" breakpoint is actually --viewportLarge */
@@ -90,7 +90,7 @@
 
 .desktopPriceValue {
   /* Font */
-  @apply --marketplaceH2FontStyles;
+  @apply --marketplaceH3FontStyles;
   color: var(--marketplaceColor);
 
   @media (--viewportMedium) {
@@ -101,13 +101,13 @@
 
 .desktopPerUnit {
   /* Font */
-  @apply --marketplaceH5FontStyles;
+  @apply --marketplaceH4FontStyles;
   color: var(--matterColor);
 
   @media (--viewportMedium) {
     margin-top: 0;
-    margin-bottom: 12px;
-    margin-left: 6px;
+    margin-bottom: 6px;
+    margin-left: 0px;
   }
 }
 

@@ -86,8 +86,8 @@ const BookingPanel = props => {
   const subTitleText = !!subTitle
     ? subTitle
     : showClosedListingHelpText
-    ? intl.formatMessage({ id: 'BookingPanel.subTitleClosedListing' })
-    : null;
+      ? intl.formatMessage({ id: 'BookingPanel.subTitleClosedListing' })
+      : null;
 
   const isNightly = unitType === LINE_ITEM_NIGHT;
   const isDaily = unitType === LINE_ITEM_DAY;
@@ -95,13 +95,14 @@ const BookingPanel = props => {
   const unitTranslationKey = isNightly
     ? 'BookingPanel.perNight'
     : isDaily
-    ? 'BookingPanel.perDay'
-    : 'BookingPanel.perUnit';
+      ? 'BookingPanel.perDay'
+      : 'BookingPanel.perUnit';
 
   const classes = classNames(rootClassName || css.root, className);
   const titleClasses = classNames(titleClassName || css.bookingTitle);
 
   return (
+
     <div className={classes}>
       <ModalInMobile
         containerClassName={css.modalContainer}
@@ -115,18 +116,49 @@ const BookingPanel = props => {
           <h1 className={css.title}>{title}</h1>
         </div>
         <div className={css.bookingHeading}>
-          <div className={css.desktopPriceContainer}>
-            <div className={css.desktopPriceValue} title={priceTitle}>
-              {formattedPrice}
+
+          <div>
+            <div className={css.bookingHeadingContainer}>
+              <h2 className={titleClasses}>{title}</h2>
+              {/* {subTitleText ? <div className={css.bookingHelp}>{subTitleText}</div> : <div className={css.bookingHelp}><FormattedMessage id="BookingPanel.priceHeadline" /> &nbsp;</div>} */}
             </div>
-            <div className={css.desktopPerUnit}>
-              <FormattedMessage id={unitTranslationKey} />
+            <div className={css.desktopPriceContainer}>
+              <div className={css.desktopPerUnit}>
+                <FormattedMessage id="BookingPanel.perHour" />: &nbsp;
+              </div>
+              <div className={css.desktopPriceValue} title={priceTitle}>
+                {price.currency + ' ' + (price.amount / 100)}
+              </div>
+              {/* <div className={css.desktopPerUnit}>
+                <FormattedMessage id={unitTranslationKey} />
+              </div> */}
             </div>
+
+            <div className={css.desktopPriceContainer}>
+              <div className={css.desktopPerUnit}>
+                <FormattedMessage id="BookingPanel.perDay" />: &nbsp;
+              </div>
+              <div className={css.desktopPriceValue} title={priceTitle}>
+                {price.currency + ' ' + (price.amount / 100) * 4}
+              </div>
+              {/* <div className={css.desktopPerUnit}>
+                per day
+              </div> */}
+            </div>
+
+            <div className={css.desktopPriceContainer}>
+              <div className={css.desktopPerUnit}>
+                <FormattedMessage id="BookingPanel.perWeek" />: &nbsp;
+              </div>
+              <div className={css.desktopPriceValue} title={priceTitle}>
+                {price.currency + ' ' + (price.amount / 100) * 4 * 4}
+              </div>
+            </div>
+
           </div>
-          <div className={css.bookingHeadingContainer}>
-            <h2 className={titleClasses}>{title}</h2>
-            {subTitleText ? <div className={css.bookingHelp}>{subTitleText}</div> : null}
-          </div>
+        </div>
+        <div className={css.bookingHeadingContainer}>
+          <h2 className={titleClasses}><FormattedMessage id="BookingPanel.bookingHeadline" />:</h2>
         </div>
 
         {showBookingTimeForm ? (
@@ -174,7 +206,7 @@ const BookingPanel = props => {
           </div>
         ) : null}
       </div>
-    </div>
+    </div >
   );
 };
 

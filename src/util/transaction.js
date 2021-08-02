@@ -328,6 +328,8 @@ export const getUserTxRole = (currentUserId, transaction) => {
       ? TX_TRANSITION_ACTOR_CUSTOMER
       : TX_TRANSITION_ACTOR_PROVIDER;
   } else {
+    //   return TX_TRANSITION_ACTOR_CUSTOMER
+    // }
     throw new Error(`Parameters for "userIsCustomer" function were wrong.
       currentUserId: ${currentUserId}, transaction: ${transaction}`);
   }

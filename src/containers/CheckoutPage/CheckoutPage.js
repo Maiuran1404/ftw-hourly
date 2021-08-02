@@ -803,8 +803,7 @@ export class CheckoutPageComponent extends Component {
                   hasHandledCardPayment={hasPaymentIntentUserActionsDone}
                   loadingData={!stripeCustomerFetched}
                   defaultPaymentMethod={
-                    null
-                    // hasDefaultPaymentMethod ? currentUser.stripeCustomer.defaultPaymentMethod : null
+                    hasDefaultPaymentMethod ? currentUser.stripeCustomer.defaultPaymentMethod : null
                   }
                   paymentIntent={paymentIntent}
                   onStripeInitialized={this.onStripeInitialized}
