@@ -154,6 +154,7 @@ const SignupFormComponent = props => (
               placeholder={emailPlaceholder}
               validate={validators.composeValidators(emailRequired, emailValid)}
             />
+            <br />
             <FieldTextInput
               type="text"
               id={formId ? `${formId}.phonenumber` : 'phonenumber'}

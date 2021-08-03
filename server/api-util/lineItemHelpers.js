@@ -32,6 +32,8 @@ exports.calculateTotalPriceFromQuantity = (unitPrice, unitCount) => {
     unitCount = 12
   } else if (unitCount > 78 && unitCount <= 200) {
     unitCount = 16
+  } else if (unitCount > 200) {
+    unitCount = 24
   };
 
   const totalPrice = amountFromUnitPrice.times(unitCount).toNearest(1, Decimal.ROUND_HALF_UP);
