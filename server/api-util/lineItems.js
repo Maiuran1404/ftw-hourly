@@ -31,12 +31,12 @@ exports.transactionLineItems = (listing, bookingData) => {
   const unitPrice = listing.attributes.price;
   const { startDate, endDate } = bookingData;
 
-  var discountRate = -10;
-  if (unitPrice.amount > 3500) {
-    discountRate = -100;
-  } else {
-    discountRate = -40;
-  }
+  var discountRate = -100;
+  // if (unitPrice.amount > 3500) {
+  //   discountRate = -100;
+  // } else {
+  //   discountRate = -40;
+  // }
 
   /**
    * If you want to use pre-defined component and translations for printing the lineItems base price for booking,
@@ -61,17 +61,32 @@ exports.transactionLineItems = (listing, bookingData) => {
     includeFor: ['provider'],
   };
 
+  var discountedMoney = 10;
+  if (calculateQuantityFromHours(startDate, endDate) <= 3) {
+    discountedMoney = new Money(0, "NOK")
+  } else if (calculateQuantityFromHours(startDate, endDate) > 3 && calculateQuantityFromHours(startDate, endDate) <= 30) {
+    discountedMoney = new Money(((calculateQuantityFromHours(startDate, endDate) * unitPrice.amount) - (4 * unitPrice.amount)), "NOK")
+  } else if (calculateQuantityFromHours(startDate, endDate) > 30 && calculateQuantityFromHours(startDate, endDate) <= 54) {
+    discountedMoney = new Money(((calculateQuantityFromHours(startDate, endDate) * unitPrice.amount) - (8 * unitPrice.amount)), "NOK")
+  } else if (calculateQuantityFromHours(startDate, endDate) > 54 && calculateQuantityFromHours(startDate, endDate) <= 78) {
+    discountedMoney = new Money(((calculateQuantityFromHours(startDate, endDate) * unitPrice.amount) - (12 * unitPrice.amount)), "NOK")
+  } else if (calculateQuantityFromHours(startDate, endDate) > 78 && calculateQuantityFromHours(startDate, endDate) <= 200) {
+    discountedMoney = new Money(((calculateQuantityFromHours(startDate, endDate) * unitPrice.amount) - (16 * unitPrice.amount)), "NOK")
+  } else if (calculateQuantityFromHours(startDate, endDate) > 200) {
+    discountedMoney = new Money(((calculateQuantityFromHours(startDate, endDate) * unitPrice.amount) - (24 * unitPrice.amount)), "NOK")
+  }
+
   const timeDiscount = {
     code: 'line-item/coupon-discount',
     //unitPrice: calculateQuantityFromHours(startDate, endDate) > 7 ? new Money(2000, "NOK") : new Money(4000, "NOK"),
     //unitPrice: new Money(50000, "NOK"),
-    unitPrice: calculateQuantityFromHours(startDate, endDate) > 7 ? new Money(10000, "NOK") : new Money(0, "NOK"),
+    unitPrice: discountedMoney,
     percentage: discountRate,
     includeFor: ['customer', 'provider'],
   };
 
-  //const lineItems = [booking, providerCommission, timeDiscount];
-  const lineItems = [booking, providerCommission];
+  const lineItems = [booking, providerCommission, timeDiscount];
+  //const lineItems = [booking, providerCommission];
   //console.log(calculateQuantityFromHours(startDate, endDate));
   //console.log(unitPrice.amount);
   return lineItems;

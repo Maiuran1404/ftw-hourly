@@ -22,19 +22,19 @@ exports.calculateTotalPriceFromQuantity = (unitPrice, unitCount) => {
   // NOTE: We round the total price to the nearest integer.
   //       Payment processors don't support fractional subunits.
 
-  if (unitCount <= 3) {
-    unitCount = unitCount
-  } else if (unitCount > 3 && unitCount <= 30) {
-    unitCount = 4
-  } else if (unitCount > 30 && unitCount <= 54) {
-    unitCount = 8
-  } else if (unitCount > 54 && unitCount <= 78) {
-    unitCount = 12
-  } else if (unitCount > 78 && unitCount <= 200) {
-    unitCount = 16
-  } else if (unitCount > 200) {
-    unitCount = 24
-  };
+  // if (unitCount <= 3) {
+  //   unitCount = unitCount
+  // } else if (unitCount > 3 && unitCount <= 30) {
+  //   unitCount = 4
+  // } else if (unitCount > 30 && unitCount <= 54) {
+  //   unitCount = 8
+  // } else if (unitCount > 54 && unitCount <= 78) {
+  //   unitCount = 12
+  // } else if (unitCount > 78 && unitCount <= 200) {
+  //   unitCount = 16
+  // } else if (unitCount > 200) {
+  //   unitCount = 24
+  // };
 
   const totalPrice = amountFromUnitPrice.times(unitCount).toNearest(1, Decimal.ROUND_HALF_UP);
   // Get total price as Number (and validate that the conversion is safe)
