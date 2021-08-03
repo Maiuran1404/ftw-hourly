@@ -70,7 +70,8 @@ exports.transactionLineItems = (listing, bookingData) => {
     includeFor: ['customer', 'provider'],
   };
 
-  const lineItems = [booking, providerCommission, timeDiscount];
+  //const lineItems = [booking, providerCommission, timeDiscount];
+  const lineItems = [booking, providerCommission];
   //console.log(calculateQuantityFromHours(startDate, endDate));
   //console.log(unitPrice.amount);
   return lineItems;
