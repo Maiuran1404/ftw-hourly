@@ -1,4 +1,4 @@
-@import '../../styles/propertySets.css';
+@import "../../styles/propertySets.css";
 
 /* Animation for the hero elements */
 
@@ -61,6 +61,7 @@
 .heroMainTitle {
   @apply --marketplaceHeroTitleFontStyles;
   color: var(--matterColorLight);
+  line-height: 1.3;
 
   composes: animation;
   animation-delay: 0.5s;
