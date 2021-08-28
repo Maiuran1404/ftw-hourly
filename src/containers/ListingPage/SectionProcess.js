@@ -20,7 +20,7 @@ const SectionProcess = props => {
         <p className={css.description}>
           <b> Telefon: 48198693 &nbsp; </b>
           <br />
-      Lurer du på noe som helst? Ring oss eller send oss en SMS så tar vi kontakt ASAP
+      Do you have any questions? Call us or message and we will get back to you ASAP.
       <br /> <br />
         </p>
       </div>
