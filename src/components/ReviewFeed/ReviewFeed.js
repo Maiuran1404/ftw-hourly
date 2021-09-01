@@ -32,7 +32,7 @@ const locationLink = (name, author, searchQuery) => {
 
             <div className={css.linkText}>
                 <FormattedMessage
-                    id="SectionLocations.listingsInLocation"
+                    id="ReviewFeed.reviews"
                     values={{ location: nameText }}
                 />
                 <p>{author}</p>

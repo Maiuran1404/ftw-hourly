@@ -781,6 +781,7 @@
   "ProfileSettingsPage.viewProfileLink": "View your user profile",
   "ResponsiveImage.noImage": "No image",
   "ReviewFeed.title": "What our customers say",
+  "ReviewFeed.reviews": "{location}",
   "ReviewForm.reviewContentLabel": "Leave a review",
   "ReviewForm.reviewContentPlaceholder": "Describe your experience…",
   "ReviewForm.reviewContentRequired": "You need to add a message to leave a review.",
