@@ -7,17 +7,6 @@
   margin-bottom: 0;
 }
 
-.reviews {
-  display: flex;
-  flex-direction: column;
-  margin-top: 0px;
-
-  @media (--viewportMedium) {
-    flex-direction: row;
-    margin-top: 33px;
-  }
-}
-
 .locations {
   display: flex;
   flex-direction: column;
@@ -25,7 +14,7 @@
 
   @media (--viewportMedium) {
     flex-direction: row;
-    margin-top: 33px;
+    margin-top: 25px;
   }
 }
 
@@ -92,8 +81,9 @@
 }
 
 .linkText {
-  @apply --marketplaceH2FontStyles;
-  color: var(--matterColor);
+  @apply --marketplaceH4FontStyles;
+  font-style: italic;
+  color: black;
   margin-top: 15px;
   margin-bottom: 0;
 
@@ -103,5 +93,6 @@
 }
 
 .locationName {
-  color: var(--marketplaceColor);
+  color: black;
+  font-size: 20px;
 }

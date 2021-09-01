@@ -20,7 +20,7 @@ class LocationImage extends Component {
 }
 const LazyImage = lazyLoadWithDimensions(LocationImage);
 
-const reviewLink = (name, searchQuery) => {
+const locationLink = (name, author, searchQuery) => {
     const nameText = <span className={css.locationName}>{name}</span>;
     return (
         <NamedLink name="SearchPage" to={{ search: searchQuery }} className={css.location}>
@@ -29,12 +29,18 @@ const reviewLink = (name, searchQuery) => {
                     <LazyImage src={image} alt={name} className={css.locationImage} />
                 </div>
             </div> */}
-            <div className={css.imageWrapper}>
-                <p>
-                    Fantastisk opplevelse og alt fungerte perfekt
-                </p>
-                <p>{name}</p>
+
+            <div className={css.linkText}>
+                <FormattedMessage
+                    id="SectionLocations.listingsInLocation"
+                    values={{ location: nameText }}
+                />
+                <p>{author}</p>
             </div>
+
+
+
+            <br /><br />
         </NamedLink>
     );
 };
@@ -46,14 +52,33 @@ const ReviewFeed = props => {
 
     return (
         <div className={classes}>
-            {/* <div className={css.title}>
+            <div className={css.title}>
                 <FormattedMessage id="ReviewFeed.title" />
             </div>
+            <div className={css.locations}>
+                {locationLink(
+                    'I was gonna have the party of a lifetime, but then our sound system broke down. In two hours (🤯) they were able to deliver a new sounboks, and the party was saved. Lovely service, faster delivery than I thought was possible, and all at an affordable price. Can not recommend enough!',
+                    //nyImage,
+                    '- Jacob Langmoen',
+                    's?address=Oslo%2C%20Oslo%2C%20Norway&bounds=59.99150957%2C10.88047726%2C59.84719282%2C10.67399192'
+                )}
+                {locationLink(
+                    'Kapp/Gjærsaw Hitachi, I will take that one 😇 Super service. I have already recommended you to many of my friends',
+                    //laImage,
+                    '- Knutsen',
+                    's?address=Oslo%2C%20Oslo%2C%20Norway&bounds=59.99150957%2C10.88047726%2C59.84719282%2C10.67399192'
+                )}
+            </div>
+            {/* <div className={css.locations}>
+                {locationLink(
 
-            <div className={css.Reviews}>
-                {reviewLink('Bruker1', "rentunicorns.com")}
-                {reviewLink('Bruker2', "rentunicorns.com")}
-                {reviewLink('Bruker2', "rentunicorns.com")}
+                )}
+                {locationLink(
+                    'Kapp/Gjærsaw Hitachi, I will take that one 😇 Super service. I have already recommended you to many of my friends',
+                    //laImage,
+                    '- Knutsen',
+                    's?address=Oslo%2C%20Oslo%2C%20Norway&bounds=59.99150957%2C10.88047726%2C59.84719282%2C10.67399192'
+                )}
             </div> */}
         </div>
     );
