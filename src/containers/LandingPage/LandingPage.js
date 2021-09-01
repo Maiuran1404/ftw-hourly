@@ -76,7 +76,7 @@ export const LandingPageComponent = props => {
               <div className={css.sectionContentFirstChild}>
 
                 <ReviewFeed />
-
+                <br />
                 <SectionLocations />
               </div>
             </li>

@@ -37,10 +37,6 @@ const locationLink = (name, author, searchQuery) => {
                 />
                 <p>{author}</p>
             </div>
-
-
-
-            <br /><br />
         </NamedLink>
     );
 };
