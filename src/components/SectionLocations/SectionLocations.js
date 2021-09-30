@@ -59,17 +59,17 @@ const SectionLocations = props => {
         {locationLink(
           'Electronics',
           electronics,
-          's?address=Oslo%2C%20Oslo%2C%20Norway&bounds=59.99150957%2C10.88047726%2C59.84719282%2C10.67399192'
+          's?address=Oslo%2C%20Norway&bounds=60.1351069980695%2C10.951387977184%2C59.8093320107807%2C10.489163013591&pub_category=film_photography'
         )}
         {locationLink(
           'Instruments',
           instruments,
-          '?address=San%20Francisco%2C%20California%2C%20USA&bounds=37.8324430069081%2C-122.354995082683%2C37.6044780500533%2C-122.517910874663'
+          's?address=Oslo%2C%20Norway&bounds=60.1351069980695%2C10.951387977184%2C59.8093320107807%2C10.489163013591&pub_category=film_photography'
         )}
         {locationLink(
           'Lego',
           lego,
-          '?address=San%20Francisco%2C%20California%2C%20USA&bounds=37.8324430069081%2C-122.354995082683%2C37.6044780500533%2C-122.517910874663'
+          's?address=Oslo%2C%20Norway&bounds=60.1351069980695%2C10.951387977184%2C59.8093320107807%2C10.489163013591&pub_category=film_photography'
         )}
       </div>
     </div>
