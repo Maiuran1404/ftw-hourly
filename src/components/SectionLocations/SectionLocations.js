@@ -8,9 +8,10 @@ import { NamedLink } from '../../components';
 
 import css from './SectionLocations.module.css';
 
-import nyImage from './images/ny-yogi.jpg';
-import laImage from './images/la-yogi.jpg';
-import sfImage from './images/sf-yogi.jpg';
+import camera from './images/camera.jpeg';
+import electronics from './images/electronics.jpeg';
+import instruments from './images/instruments.jpeg';
+import lego from './images/lego.jpeg';
 
 class LocationImage extends Component {
   render() {
@@ -51,18 +52,23 @@ const SectionLocations = props => {
       </div>
       <div className={css.locations}>
         {locationLink(
-          'Amsterdam',
-          nyImage,
-          '?address=Amsterdam%2C%20North%20Holland%2C%20Netherlands&bounds=52.430679%2C5.068426%2C52.318248%2C4.728759'
+          'Camera',
+          camera,
+          's?address=Oslo%2C%20Norway&bounds=60.1351069980695%2C10.951387977184%2C59.8093320107807%2C10.489163013591&pub_category=film_photography'
         )}
         {locationLink(
-          'Oslo',
-          laImage,
+          'Electronics',
+          electronics,
           's?address=Oslo%2C%20Oslo%2C%20Norway&bounds=59.99150957%2C10.88047726%2C59.84719282%2C10.67399192'
         )}
         {locationLink(
-          'San Francisco',
-          sfImage,
+          'Instruments',
+          instruments,
+          '?address=San%20Francisco%2C%20California%2C%20USA&bounds=37.8324430069081%2C-122.354995082683%2C37.6044780500533%2C-122.517910874663'
+        )}
+        {locationLink(
+          'Lego',
+          lego,
           '?address=San%20Francisco%2C%20California%2C%20USA&bounds=37.8324430069081%2C-122.354995082683%2C37.6044780500533%2C-122.517910874663'
         )}
       </div>
