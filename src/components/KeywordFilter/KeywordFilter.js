@@ -17,8 +17,8 @@ const getKeywordQueryParam = queryParamNames => {
   return Array.isArray(queryParamNames)
     ? queryParamNames[0]
     : typeof queryParamNames === 'string'
-    ? queryParamNames
-    : 'keywords';
+      ? queryParamNames
+      : 'keywords';
 };
 
 class KeywordFilter extends Component {
@@ -83,16 +83,16 @@ class KeywordFilter extends Component {
       !!initialValues && !!initialValues[urlParam] && initialValues[urlParam].length > 0;
     const labelForPopup = hasInitialValues
       ? intl.formatMessage(
-          { id: 'KeywordFilter.labelSelected' },
-          { labelText: initialValues[urlParam] }
-        )
+        { id: 'KeywordFilter.labelSelected' },
+        { labelText: initialValues[urlParam] }
+      )
       : label;
 
     const labelForPlain = hasInitialValues
       ? intl.formatMessage(
-          { id: 'KeywordFilterPlainForm.labelSelected' },
-          { labelText: initialValues[urlParam] }
-        )
+        { id: 'KeywordFilterPlainForm.labelSelected' },
+        { labelText: initialValues[urlParam] }
+      )
       : label;
 
     const filterText = intl.formatMessage({ id: 'KeywordFilter.filterText' });
@@ -170,33 +170,33 @@ class KeywordFilter extends Component {
         />
       </FilterPopup>
     ) : (
-      <FilterPlain
-        className={className}
-        rootClassName={rootClassName}
-        label={labelForPlain}
-        isSelected={hasInitialValues}
-        id={`${id}.plain`}
-        liveEdit
-        contentPlacementOffset={contentStyle}
-        onSubmit={handleChangeWithDebounce}
-        onClear={handleClear}
-        initialValues={namedInitialValues}
-        {...rest}
-      >
-        <fieldset className={css.fieldPlain}>
-          <label>{filterText}</label>
-          <FieldTextInput
-            name={name}
-            id={`${id}-input`}
-            isUncontrolled
-            inputRef={this.mobileInputRef}
-            type="text"
-            placeholder={placeholder}
-            autoComplete="off"
-          />
-        </fieldset>
-      </FilterPlain>
-    );
+        <FilterPlain
+          className={className}
+          rootClassName={rootClassName}
+          label={labelForPlain}
+          isSelected={hasInitialValues}
+          id={`${id}.plain`}
+          liveEdit
+          contentPlacementOffset={contentStyle}
+          onSubmit={handleChangeWithDebounce}
+          onClear={handleClear}
+          initialValues={namedInitialValues}
+          {...rest}
+        >
+          <fieldset className={css.fieldPlain}>
+            <label>{filterText}</label>
+            <FieldTextInput
+              name={name}
+              id={`${id}-input`}
+              isUncontrolled
+              inputRef={this.mobileInputRef}
+              type="text"
+              placeholder={placeholder}
+              autoComplete="off"
+            />
+          </fieldset>
+        </FilterPlain>
+      );
   }
 }
 

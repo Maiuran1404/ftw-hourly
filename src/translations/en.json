@@ -1079,7 +1079,7 @@
   "TopbarMobileMenu.signupOrLogin": "{signup} or {login}",
   "TopbarMobileMenu.unauthorizedGreeting": "Hello there,{lineBreak}would you like to {signupOrLogin}?",
   "TopbarMobileMenu.yourListingsLink": "Your product",
-  "TopbarSearchForm.placeholder": "Search for your city...",
+  "TopbarSearchForm.placeholder": "Search for product...",
   "TopbarSearchForm.searchHelp": "Tip: You can also search products by zip code, for example \"10012\" or city district \"Manhattan\".",
   "TransactionPage.deletedListing": "deleted product",
   "TransactionPage.fetchOrderFailed": "Fetching order data failed.",

@@ -19,6 +19,7 @@ import {
 import { TopbarSearchForm } from '../../forms';
 
 import css from './TopbarDesktop.module.css';
+import FilterSearchTopbar from '../FilterSearchTopbar/FilterSearchTopbar';
 
 const TopbarDesktop = props => {
   const {
