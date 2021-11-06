@@ -74,7 +74,7 @@ const routeConfiguration = () => {
       component: AboutPage,
     },
     {
-      path: '/b2b',
+      path: '/business',
       name: 'B2bPage',
       component: B2bPage,
     },
