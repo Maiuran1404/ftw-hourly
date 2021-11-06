@@ -5,6 +5,8 @@ import classNames from 'classnames';
 import { NamedLink } from '../../components';
 
 import css from './SectionHero.module.css';
+import HeroSearch from '../HeroSearch/HeroSearch';
+import { TopbarSearchForm } from '../../forms';
 
 const SectionHero = props => {
   const { rootClassName, className } = props;
@@ -20,7 +22,9 @@ const SectionHero = props => {
         <h2 className={css.heroSubTitle}>
           <FormattedMessage id="SectionHero.subTitle" />
         </h2>
-        <NamedLink
+        <HeroSearch />
+        {/* <TopbarSearchForm /> */}
+        {/* <NamedLink
           name="SearchPage"
           to={{
             search:
@@ -29,7 +33,7 @@ const SectionHero = props => {
           className={css.heroButton}
         >
           <FormattedMessage id="SectionHero.browseButton" />
-        </NamedLink>
+        </NamedLink> */}
       </div>
     </div>
   );
