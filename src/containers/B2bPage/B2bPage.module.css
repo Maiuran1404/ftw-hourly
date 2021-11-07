@@ -1,8 +1,23 @@
-@import '../../styles/customMediaQueries.css';
-@import '../../styles/propertySets.css';
+@import "../../styles/customMediaQueries.css";
+@import "../../styles/propertySets.css";
 
 .pageTitle {
-  text-align: center;
+  margin-top: 8%;
+  text-align: left;
+}
+
+.pageSubtitle {
+  text-align: left;
+  margin-top: 0%;
+  font-size: 1.3em;
+}
+
+.ctaButton {
+  width: 25%;
+  text-decoration: none;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10px;
 }
 
 .staticPageWrapper {
