@@ -31,6 +31,30 @@
   }
 }
 
+.photos {
+  display: grid;
+  grid-auto-flow: column;
+  height: 100%;
+}
+
+.photoone {
+  height: 200px;
+  width: 300px;
+  margin: 0;
+}
+
+.photoone:first-of-type {
+  margin-right: 20px;
+}
+
+.photoone:last-of-type {
+  margin-left: 20px;
+}
+
+.photoexample {
+  width: 100%;
+}
+
 .coverImage {
   width: 100%;
   height: 528px;
@@ -70,4 +94,29 @@
   @apply --marketplaceH3FontStyles;
   margin-top: 32px;
   margin-bottom: 16px;
+}
+
+.contentSubtitle {
+  margin-bottom: 0px;
+}
+
+.contentTitle {
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+.contentBoxes {
+  display: grid;
+  grid-auto-flow: column;
+  height: 100%;
+  margin-right: 20%;
+}
+
+.contentParagraph {
+}
+
+.pricingHeader {
+  display: grid;
+  grid-auto-flow: column;
+  height: 100%;
 }
