@@ -27,6 +27,11 @@ const TypeformPage = () => {
         "'self'",
         'https://fonts.googleapis.com',
         'https://checkout.stripe.com',
+        'unsafe-inline',
+        'fonts.googleapis.com',
+        'api.mapbox.com',
+        'https://widget.intercom.io/widget/zyktpfju',
+        'https://js.intercomcdn.com/frame-modern.812aa270.js"'
       ],
       fontSrc: ["'self'", 'https://fonts.gstatic.com'],
       imgSrc: ["'self'", 'https://*.stripe.com', 'https://res.cloudinary.com'],
