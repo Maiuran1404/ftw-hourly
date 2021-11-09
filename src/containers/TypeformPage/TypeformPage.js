@@ -2,12 +2,31 @@ import React from 'react';
 import config from '../../config';
 import { twitterPageURL } from '../../util/urlHelpers';
 import { Helmet } from "react-helmet";
+const helmet = require('helmet')
 
 import css from './TypeformPage.module.css';
 
 const TypeformPage = () => {
   const { siteTwitterHandle, siteFacebookPage } = config;
   const siteTwitterPage = twitterPageURL(siteTwitterHandle);
+
+  helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: ["'self'"],
+      connectSrc: ["'self'", 'https://checkout.stripe.com'],
+      frameSrc: ["'self'", 'https://checkout.stripe.com'],
+      childSrc: ["'self'", 'https://checkout.stripe.com'],
+      scriptSrc: ["'self'", 'https://checkout.stripe.com'],
+      styleSrc: [
+        "'self'",
+        'https://fonts.googleapis.com',
+        'https://checkout.stripe.com',
+      ],
+      fontSrc: ["'self'", 'https://fonts.gstatic.com'],
+      imgSrc: ["'self'", 'https://*.stripe.com', 'https://res.cloudinary.com'],
+      baseUri: ["'self'"],
+    },
+  })
 
   // prettier-ignore
   return (
@@ -23,6 +42,8 @@ const TypeformPage = () => {
 
 
       </Helmet>
+
+
     </>
 
   );
