@@ -11,7 +11,11 @@ const TypeformPage = () => {
 
   // prettier-ignore
   return (
+
     <>
+      <meta http-equiv="Content-Security-Policy" content="style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+
+      </meta>
       <div id="wrapper" data-tf-widget="gnijvcG0" data-tf-inline-on-mobile ></div>
 
       <Helmet>
