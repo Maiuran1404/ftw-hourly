@@ -14,6 +14,8 @@ import {
   Button,
 } from '../../components';
 
+import { Widget, PopupButton, SliderButton, Popover, Sidetab } from '@typeform/embed-react'
+
 import retailone from './retailone.jpeg';
 import retailtwo from './retailtwo.jpeg';
 import retailthree from './retailthree.jpeg';
@@ -50,7 +52,9 @@ const B2bPage = () => {
           <h4 className={css.pageSubtitle}> We do insurance, delivery and marketing so you can focus <br /> on getting more money from your existing inventory  </h4>
           <br />
           <button className={css.ctaButton} >Sign up</button>
-          <Link to="/typeformpage" className="btn btn-primary">Sign up</Link>
+          <PopupButton id="gnijvcG0" style={{ padding: 12, fontSize: 16 }} size={80}>
+            click to open in popup
+      </PopupButton>
 
           <br /><br />
 
