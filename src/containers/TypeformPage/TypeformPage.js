@@ -10,50 +10,13 @@ const TypeformPage = () => {
   const { siteTwitterHandle, siteFacebookPage } = config;
   const siteTwitterPage = twitterPageURL(siteTwitterHandle);
 
-  helmet.contentSecurityPolicy({
-    directives: {
-      frameSrc: [
-        "'self'",
-        '*.stripe.com',
-        'https://widget.intercom.io/widget/zyktpfju',
-        'https://js.intercomcdn.com/frame-modern.812aa270.js'
-      ],
-      defaultSrc: ["'self'"],
-      connectSrc: ["'self'", 'https://checkout.stripe.com'],
-      frameSrc: ["'self'", 'https://checkout.stripe.com'],
-      childSrc: ["'self'", 'https://checkout.stripe.com'],
-      scriptSrc: ["'self'", 'https://checkout.stripe.com'],
-      styleSrc: [
-        "'self'",
-        'https://fonts.googleapis.com',
-        'https://checkout.stripe.com',
-        'unsafe-inline',
-        'fonts.googleapis.com',
-        'api.mapbox.com',
-        'https://widget.intercom.io/widget/zyktpfju',
-        'https://js.intercomcdn.com/frame-modern.812aa270.js"'
-      ],
-      fontSrc: ["'self'", 'https://fonts.gstatic.com'],
-      imgSrc: ["'self'", 'https://*.stripe.com', 'https://res.cloudinary.com'],
-      baseUri: ["'self'"],
-    },
-  })
 
   // prettier-ignore
   return (
 
     <>
-      <meta http-equiv="Content-Security-Policy" content="style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
-
-      </meta>
-      <div id="wrapper" data-tf-widget="gnijvcG0" data-tf-inline-on-mobile ></div>
-
-      <Helmet>
-        <script src="//embed.typeform.com/next/embed.js"></script>
-
-
-      </Helmet>
-
+      <div data-tf-widget="gnijvcG0"></div>
+      <script src="//embed.typeform.com/next/embed.js"></script>
 
     </>
 

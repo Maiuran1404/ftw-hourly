@@ -1870,6 +1870,11 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==
 
+"@typeform/embed@^1.22.1":
+  version "1.22.1"
+  resolved "https://registry.yarnpkg.com/@typeform/embed/-/embed-1.22.1.tgz#fb9ee2a9391829f7b8dd0675d5523f136085b792"
+  integrity sha512-iaEE3JDQ9anYh8lUlo94c0TrYT8j09nRaByuOs5YHIvG+aOySAYybI7Pc7PO5WrZLlPb2Em9jVCFLPRmBqt6QA==
+
 "@types/babel__core@^7.0.0", "@types/babel__core@^7.1.7":
   version "7.1.16"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.16.tgz#bc12c74b7d65e82d29876b5d0baf5c625ac58702"
