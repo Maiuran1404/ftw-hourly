@@ -23,6 +23,7 @@ import insurance from './insurance.png';
 import marketfront from './marketfront.png';
 
 import css from './B2bPage.module.css';
+import { Link } from 'react-router-dom';
 
 const B2bPage = () => {
   const { siteTwitterHandle, siteFacebookPage } = config;
@@ -48,7 +49,9 @@ const B2bPage = () => {
           <h1 className={css.pageTitle}>Rental infrastructure for every business</h1>
           <h4 className={css.pageSubtitle}> We do insurance, delivery and marketing so you can focus <br /> on getting more money from your existing inventory  </h4>
           <br />
-          <button className={css.ctaButton}>Sign up</button>
+          <button className={css.ctaButton} >Sign up</button>
+          <Link to="/typeformpage" className="btn btn-primary">Sign up</Link>
+
           <br /><br />
 
 

@@ -13,6 +13,7 @@ const pageDataLoadingAPI = getPageDataLoadingAPI();
 
 const AboutPage = loadable(() => import(/* webpackChunkName: "AboutPage" */ './containers/AboutPage/AboutPage'));
 const B2bPage = loadable(() => import(/* webpackChunkName: "B2bPage" */ './containers/B2bPage/B2bPage'));
+const TypeformPage = loadable(() => import(/* webpackChunkName: "TypeformPage" */ './containers/TypeformPage/TypeformPage'));
 const FaqPage = loadable(() => import(/* webpackChunkName: "FaqPage" */ './containers/FaqPage/FaqPage'));
 const AuthenticationPage = loadable(() => import(/* webpackChunkName: "AuthenticationPage" */ './containers/AuthenticationPage/AuthenticationPage'));
 const CheckoutPage = loadable(() => import(/* webpackChunkName: "CheckoutPage" */ './containers/CheckoutPage/CheckoutPage'));
@@ -77,6 +78,11 @@ const routeConfiguration = () => {
       path: '/business',
       name: 'B2bPage',
       component: B2bPage,
+    },
+    {
+      path: '/typeformpage',
+      name: 'TypeformPage',
+      component: TypeformPage,
     },
     {
       path: '/faq',
