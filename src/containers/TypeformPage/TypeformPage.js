@@ -12,6 +12,12 @@ const TypeformPage = () => {
 
   helmet.contentSecurityPolicy({
     directives: {
+      frameSrc: [
+        "'self'",
+        '*.stripe.com',
+        'https://widget.intercom.io/widget/zyktpfju',
+        'https://js.intercomcdn.com/frame-modern.812aa270.js'
+      ],
       defaultSrc: ["'self'"],
       connectSrc: ["'self'", 'https://checkout.stripe.com'],
       frameSrc: ["'self'", 'https://checkout.stripe.com'],
